@@ -4,6 +4,11 @@
         <a href="#Projects" style="margin-right: 15px; text-decoration: none;">Projects</a>
         <a href="#NEWS" style="text-decoration: none;">NEWS</a>
     </nav>
+    <div>
+        <a href="cv.pdf" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/pdf.png" alt="Download CV" title="Download CV" width="30" height="30"/>
+        </a>
+    </div>
 </div>
 
 <div style="display: flex; align-items: center; margin-top: 20px;">
@@ -17,7 +22,7 @@
 
 ## <a id="About Me"></a>About Me
 
-As my name suggests, I am originally from Seoul, South Korea, and I lived in Japan for a while. When I was a senior undergraduate student, I had the chance to visit Purdue University as a visiting scholar in the AI team. After graduating with my bachelor's degree, I decided to return to Purdue as a graduate student. My master's thesis focused on designing a zipper robot integrated with a machine learning algorithm to determine the optimal threshold using a sensor data collected from people with physical disabilities. The algorithm leveraged the data to enhance the robot's performance and adaptability, providing a more efficient and user-friendly experience for individuals with varying levels of physical ability.
+As my name suggests, I am originally from Seoul, South Korea, and I lived in Japan for a while. When I was a senior undergraduate student, I had the chance to visit Purdue University as a visiting scholar in the AI team. After graduating with my bachelor's degree, I decided to return to Purdue as a graduate student. My master's thesis focused on designing a zipper robot integrated with a machine learning algorithm to determine the optimal threshold using sensor data collected from people with physical disabilities. The algorithm leveraged the data to enhance the robot's performance and adaptability, providing a more efficient and user-friendly experience for individuals with varying levels of physical ability.
 
 ## <a id="Projects"></a>Projects
 
