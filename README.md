@@ -1,5 +1,4 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <h1>Minji Lee</h1>
     <nav>
         <a href="#about" style="margin-right: 15px; text-decoration: none;">About</a>
         <a href="#projects" style="margin-right: 15px; text-decoration: none;">Projects</a>
@@ -30,17 +29,10 @@
 
 (Add your CV content here)
 
-## News
-
-- **Mar 4, 2024:** I joined MSCI as an ESG Research Intern and will continue working until I begin my Master’s program this fall.
-- **Feb 21, 2024:** I graduated from Kyunghee University with a Bachelor's degree in Economics and a Bachelor's degree in Engineering with a focus on Data Science Track!
-- **Aug 16, 2023:** I’m delighted to share that I’ve joined United Nations as a Research and Data Intern! 😄
-- **Aug 11, 2023:** I finished my summer internship at Cisco Systems. ✨
+- **Aug 3, 2024:** Graduation ceremony for my Ph.D.
+- **July 17, 2024:** Final Thesis Presentation
+- **Mar 15, 2024:** Passed Candidate Exam
+- **May 21, 2021:** Accepted into Ph.D. Program at Purdue University
+- **May 20, 2021:** Joined internship at Argonne National Laboratory
 
 ## Selected Projects
-
-![Project Image](project_image.jpg) <!-- Replace with your project image -->
-**Working: ASEAN Gender Outlook 2023: Achieving the SDGs for all and leaving no woman or girl behind**
-UN Women, Women Count Flagship Programme on Gender Statistics, 2023
-
-[ABS](#) [PDF](#)
