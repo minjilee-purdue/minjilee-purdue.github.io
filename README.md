@@ -71,4 +71,4 @@ Looking ahead, I'm enthusiastic about delving into the realm of data analysis. D
 
 ## <a id="Contact"></a>Contact
 
-<a href="mailto:lee3450@purdue.edu" style="color: blue; text-decoration: none;">lee3450@purdue.edu</a> or <a href="https://www.linkedin.com/in/minji-lee-purdue/" style="color: blue; text-decoration: none;">LinkedIn</a>
+<a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> or <a href="https://www.linkedin.com/in/minji-lee-purdue/" style="color: inherit; text-decoration: none;">LinkedIn</a>
