@@ -65,8 +65,8 @@ In my work, I utilize a range of tools and techniques for analyzing geographical
 
 ### Future Directions
 
-Looking ahead, I am excited to explore new avenues in the field of geographical and meteorological data analysis, including interdisciplinary collaborations, novel data sources, and innovative machine learning approaches. I am passionate about using data-driven insights to address pressing environmental challenges and contribute to the advancement of scientific knowledge in this area.
+Looking ahead, I'm enthusiastic about delving into the realm of data analysis. During my internship experiences, I adeptly managed geographical and meteorological data analysis projects, engaging in interdisciplinary collaborations and leveraging novel data sources and innovative machine learning techniques. In industry, I was engaged with LG Innotek, where I utilized data-driven insights to tackle urgent environmental issues and contribute to the progression of scientific understanding in this domain.
 
 ## <a id="Contact"></a>Contact
 
-<a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> or [LinkedIn](https://www.linkedin.com/in/minji-lee-purdue/)
+<a href="mailto:lee3450@purdue.edu" style="color: blue; text-decoration: none;">lee3450@purdue.edu</a> or <a href="https://www.linkedin.com/in/minji-lee-purdue/" style="color: blue; text-decoration: none;">LinkedIn</a>
