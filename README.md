@@ -1,8 +1,8 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <nav>
-        <a href="#About" style="margin-right: 15px; text-decoration: none;">About</a>
+        <a href="#About Me" style="margin-right: 15px; text-decoration: none;">About</a>
         <a href="#Projects" style="margin-right: 15px; text-decoration: none;">Projects</a>
-        <a href="#NEWS" style="text-decoration: none;">CV</a>
+        <a href="#NEWS" style="text-decoration: none;">NEWS</a>
     </nav>
 </div>
 
@@ -15,7 +15,7 @@
     </div>
 </div>
 
-## <a id="About"></a>About
+## <a id="About Me"></a>About Me
 
 I'm currently focused on the development of DiT Models as a Research Assistant at Purdue University's M2M Lab under the guidance of Dr. Matson's advisor. Feel free to reach out to me at <a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> if you have any questions or would like to connect
 
@@ -25,9 +25,7 @@ I'm currently focused on the development of DiT Models as a Research Assistant a
 - Argonne National Laboratory, [Sage Project](https://www.anl.gov/mcs/sage-a-softwaredefined-sensor-network)
 - LG Innotek, [InnoMLOps](https://www.lginnotek.com/main/main.do)
 
-## <a id="NEWS"></a>CV
-
-(Add your CV content here)
+## <a id="NEWS"></a>NEWS
 
 - **Aug 3, 2024:** Graduation ceremony for my Ph.D.
 - **July 17, 2024:** Final Thesis Presentation
@@ -36,18 +34,11 @@ I'm currently focused on the development of DiT Models as a Research Assistant a
 - **May 20, 2021:** Joined internship at Argonne National Laboratory
 
 ## Selected Projects
-## Project
 
-- Purdue University, [Semantic Segmentation in Geographical and Meteorological Data Analysis](https://github.com/MINJILEE-PURDUE/erc_tree_semantic_segmentation_in_mlops)
-- Argonne National Laboratory, [Sage Project](https://www.anl.gov/mcs/sage-a-softwaredefined-sensor-network)
-- LG Innotek, InnoMLOps, (https://www.lginnotek.com/main/main.do)
-
----
-
-## Semantic Segmentation
+### Semantic Segmentation
 In addition to my work in integrating AI and ML in agriculture and forestry, I have a keen interest in the analysis of geographical and meteorological data. This field offers rich opportunities for leveraging machine learning techniques to gain insights into various environmental phenomena and make informed decisions.
 
-### Research Focus
+#### Research Focus
 
 My research in this area centers around leveraging advanced machine learning models and techniques to analyze large-scale geographical and meteorological datasets. By applying data analysis methods to understand patterns, trends, and anomalies in weather and environmental data, I aim to contribute to our understanding of complex Earth systems and support decision-making processes in areas such as climate adaptation, disaster preparedness, and resource management.
 
