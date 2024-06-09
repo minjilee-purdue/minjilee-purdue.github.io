@@ -1,6 +1,6 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <nav>
-        <a href="#About Me" style="margin-right: 15px; text-decoration: none;">About</a>
+        <a href="#About Me" style="margin-right: 15px; text-decoration: none;">About Me</a>
         <a href="#Projects" style="margin-right: 15px; text-decoration: none;">Projects</a>
         <a href="#NEWS" style="text-decoration: none;">NEWS</a>
     </nav>
