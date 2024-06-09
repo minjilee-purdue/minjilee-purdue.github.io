@@ -17,7 +17,7 @@
 
 ## <a id="About Me"></a>About Me
 
-I'm currently focused on the development of DiT Models as a Research Assistant at Purdue University's M2M Lab under the guidance of Dr. Matson's advisor. Feel free to reach out to me at <a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> if you have any questions or would like to connect
+As my name suggests, I am originally from Seoul, South Korea, and I lived in Japan for a while. When I was a senior undergraduate student, I had the chance to visit Purdue University as a visiting scholar in the AI team. After graduating with my bachelor's degree, I decided to return to Purdue as a graduate student. My master's thesis focused on designing a zipper robot integrated with a machine learning algorithm to determine the optimal threshold using a sensor data collected from people with physical disabilities. The algorithm leveraged the data to enhance the robot's performance and adaptability, providing a more efficient and user-friendly experience for individuals with varying levels of physical ability.
 
 ## <a id="Projects"></a>Projects
 
