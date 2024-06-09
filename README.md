@@ -1,5 +1,14 @@
-<div style="display: flex;">
-    <div style="flex: 1;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h1>Minji Lee</h1>
+    <nav>
+        <a href="#about" style="margin-right: 15px; text-decoration: none;">About</a>
+        <a href="#projects" style="margin-right: 15px; text-decoration: none;">Projects</a>
+        <a href="#cv" style="text-decoration: none;">CV</a>
+    </nav>
+</div>
+
+<div style="display: flex; align-items: center; margin-top: 20px;">
+    <div style="flex: 1; margin-right: 20px;">
         <img src="profile.jpg" alt="Profile Picture" width="200" height="auto">
     </div>
     <div style="flex: 2;">
@@ -7,45 +16,31 @@
     </div>
 </div>
 
+## <a id="about"></a>About
 
-## News
+(Add your about section content here)
 
-- **Aug 3, 2024:** Graduation ceremony for my Ph.D.
-- **July 17, 2024:** Final Thesis Presentation
-- **Mar 15, 2024:** Passed Candidate Exam
-- **May 21, 2021:** Accepted into Ph.D. Program at Purdue University
-- **May 20, 2021:** Joined internship at Argonne National Laboratory
-
-## Project
+## <a id="projects"></a>Projects
 
 - Purdue University, [Semantic Segmentation in Geographical and Meteorological Data Analysis](https://github.com/MINJILEE-PURDUE/erc_tree_semantic_segmentation_in_mlops)
 - Argonne National Laboratory, [Sage Project](https://www.anl.gov/mcs/sage-a-softwaredefined-sensor-network)
-- LG Innotek, InnoMLOps, (https://www.lginnotek.com/main/main.do)
+- LG Innotek, [InnoMLOps](https://www.lginnotek.com/main/main.do)
 
----
+## <a id="cv"></a>CV
 
-## Semantic Segmentation
-In addition to my work in integrating AI and ML in agriculture and forestry, I have a keen interest in the analysis of geographical and meteorological data. This field offers rich opportunities for leveraging machine learning techniques to gain insights into various environmental phenomena and make informed decisions.
+(Add your CV content here)
 
-### Research Focus
+## News
 
-My research in this area centers around leveraging advanced machine learning models and techniques to analyze large-scale geographical and meteorological datasets. By applying data analysis methods to understand patterns, trends, and anomalies in weather and environmental data, I aim to contribute to our understanding of complex Earth systems and support decision-making processes in areas such as climate adaptation, disaster preparedness, and resource management.
+- **Mar 4, 2024:** I joined MSCI as an ESG Research Intern and will continue working until I begin my Master’s program this fall.
+- **Feb 21, 2024:** I graduated from Kyunghee University with a Bachelor's degree in Economics and a Bachelor's degree in Engineering with a focus on Data Science Track!
+- **Aug 16, 2023:** I’m delighted to share that I’ve joined United Nations as a Research and Data Intern! 😄
+- **Aug 11, 2023:** I finished my summer internship at Cisco Systems. ✨
 
-### Current Projects
+## Selected Projects
 
-- **Geospatial Analysis of Climate Data:** I am currently involved in a project that focuses on analyzing climate data collected from various geographical locations. By applying machine learning algorithms to this data, we aim to identify patterns and trends in temperature, precipitation, and other meteorological variables over time.
+![Project Image](project_image.jpg) <!-- Replace with your project image -->
+**Working: ASEAN Gender Outlook 2023: Achieving the SDGs for all and leaving no woman or girl behind**
+UN Women, Women Count Flagship Programme on Gender Statistics, 2023
 
-- **Predictive Modeling for Extreme Weather Events:** Another project I am working on involves developing predictive models for extreme weather events, such as hurricanes, floods, and droughts. By combining historical weather data with machine learning techniques, we aim to improve the accuracy of forecasting and enhance preparedness and response efforts.
-
-### Tools and Techniques
-
-In my work, I utilize a range of tools and techniques for analyzing geographical and meteorological data, including:
-
-- Geographic Information Systems (GIS) software for spatial analysis and visualization
-- Python libraries such as NumPy, Pandas, and Matplotlib for data manipulation and visualization
-- Machine learning frameworks such as TensorFlow and scikit-learn for building predictive models
-- Statistical methods for analyzing climate data and identifying trends and patterns
-
-### Future Directions
-
-Looking ahead, I am excited to explore new avenues in the field of geographical and meteorological data analysis, including interdisciplinary collaborations, novel data sources, and innovative machine learning approaches. I am passionate about using data-driven insights to address pressing environmental challenges and contribute to the advancement of scientific knowledge in this area.
+[ABS](#) [PDF](#)
