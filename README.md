@@ -2,11 +2,12 @@
     <nav>
         <a href="#About Me" style="margin-right: 15px; text-decoration: none;">About Me</a>
         <a href="#Projects" style="margin-right: 15px; text-decoration: none;">Projects</a>
-        <a href="#NEWS" style="text-decoration: none;">NEWS</a>
+        <a href="#NEWS" style="margin-right: 15px; text-decoration: none;">NEWS</a>
+        <a href="#Contact" style="text-decoration: none;">Contact</a>
     </nav>
     <div>
         <a href="cv.pdf" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/50/000000/pdf.png" alt="Download CV" title="Download CV" width="30" height="30"/>
+            <img src="pdf-icon.png" alt="Download CV" title="Download CV" width="30" height="30"/>
         </a>
     </div>
 </div>
@@ -65,3 +66,7 @@ In my work, I utilize a range of tools and techniques for analyzing geographical
 ### Future Directions
 
 Looking ahead, I am excited to explore new avenues in the field of geographical and meteorological data analysis, including interdisciplinary collaborations, novel data sources, and innovative machine learning approaches. I am passionate about using data-driven insights to address pressing environmental challenges and contribute to the advancement of scientific knowledge in this area.
+
+## <a id="Contact"></a>Contact
+
+<a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> or [LinkedIn](https://www.linkedin.com/in/minji-lee-purdue/)
