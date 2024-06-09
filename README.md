@@ -3,7 +3,7 @@
         <img src="profile.jpg" alt="Profile Picture" width="200" height="auto">
     </div>
     <div style="flex: 2;">
-        <p>Hi there! I’m a Ph.D. Candidate in Technology at Purdue University, with a passion for computer vision, especially semantic segmentation. I'm currently focused on the development of DiT Models as a Research Assistant at Purdue University's M2M Lab under the guidance of Dr. Matson's advisor. Feel free to reach out to me at <a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> if you have any questions or would like to connect.</p>
+        <p>Hi there! My name is Minji Lee. I’m a Ph.D. Candidate in Technology at Purdue University, with a passion for computer vision, especially semantic segmentation. I'm currently focused on the development of DiT Models as a Research Assistant at Purdue University's M2M Lab under the guidance of Dr. Matson's advisor. Feel free to reach out to me at <a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> if you have any questions or would like to connect.</p>
     </div>
 </div>
 
