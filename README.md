@@ -8,4 +8,4 @@ I'm currently focused on the development of DiT Models as a Research Assistant a
 
 ## Contact Me
 
-Feel free to reach out to me at [lee3450@purdue.edu](mailto:lee3450@purdue.edu) if you have any questions or would like to connect.
+Feel free to reach out to me at <a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> if you have any questions or would like to connect.
