@@ -9,6 +9,9 @@
         <a href="MinjiLee_CV.pdf" target="_blank">
             <img src="pdf-icon.png" alt="Download CV" title="Download CV" width="30" height="30"/>
         </a>
+        <a href="MinjiLee_Resume.pdf" target="_blank">
+            <img src="pdf-icon.png" alt="Download Resume" title="Download Resume" width="30" height="30"/>
+        </a>
     </div>
 </div>
 
