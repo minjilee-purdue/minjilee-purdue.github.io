@@ -33,7 +33,7 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 ## <a id="Projects"></a>Projects
 
 - Purdue University, [Semantic Segmentation in Geographical and Meteorological Data Analysis](https://github.com/MINJILEE-PURDUE/erc_tree_semantic_segmentation_in_mlops)
-- Argonne National Laboratory, [Sage Project](https://www.anl.gov/mcs/sage-a-softwaredefined-sensor-network](https://github.com/waggle-sensor)
+- Argonne National Laboratory, [Sage Project](https://github.com/waggle-sensor)
 
 ## <a id="NEWS"></a>NEWS
 
