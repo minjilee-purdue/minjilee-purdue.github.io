@@ -37,15 +37,15 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 
 ## <a id="NEWS"></a>NEWS
 
-- **Aug 3, 2024:** Graduation ceremony for my Ph.D.
-- **July 17, 2024:** Final Thesis Presentation
-- **Mar 15, 2024:** Passed Candidate Exam
-- **July 3, 2023:** Joined LG Innotek Internship
-- **May 25, 2022:** Joined internship at Argonne National Laboratory
-- **May 21, 2021:** Accepted into Ph.D. Program at Purdue University\
-- **May 23, 2021:** Graduated for my MS Program
-- **May 20, 2021:** Joined internship at Argonne National Laboratory Virtually Due to Pandamic
-- **Aug 20, 2019:** Started MS Program at Purdue
+- **Aug 3, 2024** Graduation ceremony for Ph.D.
+- **July 17, 2024** Final Thesis Presentation
+- **Mar 15, 2024** Passed Candidate Exam
+- **July 3, 2023** Joined LG Innotek Internship
+- **May 25, 2022** Joined internship at Argonne National Laboratory
+- **May 21, 2021** Accepted into Ph.D. Program at Purdue University\
+- **May 23, 2021** Graduated for my MS Program
+- **May 20, 2021** Joined internship at Argonne National Laboratory Virtually Due to Pandamic
+- **Aug 20, 2019** Started MS Program at Purdue
 
 ## Selected Projects
 
