@@ -70,18 +70,18 @@ My research in this area centers around leveraging advanced machine learning mod
 </div>
 
 
-![demo_erc_1](/src/image_012_clustering.png)
-
-![demo_erc_4](/src/results_old_12.png)
-
-![demo_erc_4](/src/results_updated_12.png)
-
 
 ### Current Projects
 
 - **Geospatial Analysis of Climate Data:** I am currently involved in a project that focuses on analyzing climate data collected from various geographical locations. By applying machine learning algorithms to this data, we aim to identify patterns and trends in temperature, precipitation, and other meteorological variables over time.
 
 - **Predictive Modeling for Extreme Weather Events:** Another project I am working on involves developing predictive models for extreme weather events, such as hurricanes, floods, and droughts. By combining historical weather data with machine learning techniques, we aim to improve the accuracy of forecasting and enhance preparedness and response efforts.
+
+
+
+![demo_erc_1](/src/image_012_clustering.png)
+
+
 
 ### Tools and Techniques
 
@@ -91,6 +91,12 @@ In my work, I utilize a range of tools and techniques for analyzing geographical
 - Python libraries such as NumPy, Pandas, and Matplotlib for data manipulation and visualization
 - Machine learning frameworks such as TensorFlow and scikit-learn for building predictive models
 - Statistical methods for analyzing climate data and identifying trends and patterns
+  
+![demo_erc_4](/src/results_old_12.png)
+
+![demo_erc_4](/src/results_updated_12.png)
+
+
 
 ### Future Directions
 
