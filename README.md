@@ -61,7 +61,7 @@ My research in this area centers around leveraging advanced machine learning mod
 
 ### SAM Demo with HuggingFace/Gradio
 
-![demo_erc_1](/src/image_012_clustering.png)
+![demo_erc_4](/src/final_demo.gif)
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <img src="/src/mask_12_seg_1.png" alt="demo_erc_2" style="width: 30%; margin: 10px;">
@@ -70,14 +70,11 @@ My research in this area centers around leveraging advanced machine learning mod
 </div>
 
 
+![demo_erc_1](/src/image_012_clustering.png)
 
 ![demo_erc_4](/src/results_old_12.png)
 
-Pretrained model and updated result
-
 ![demo_erc_4](/src/results_updated_12.png)
-
-![demo_erc_4](/src/final_demo.gif)
 
 
 ### Current Projects
