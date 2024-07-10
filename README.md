@@ -57,6 +57,24 @@ In addition to my work in integrating AI and ML in agriculture and forestry, I h
 
 My research in this area centers around leveraging advanced machine learning models and techniques to analyze large-scale geographical and meteorological datasets. By applying data analysis methods to understand patterns, trends, and anomalies in weather and environmental data, I aim to contribute to our understanding of complex Earth systems and support decision-making processes in areas such as climate adaptation, disaster preparedness, and resource management.
 
+
+
+### SAM Demo with HuggingFace/Gradio
+
+![demo_erc_1](/src/image_012_clustering.png)
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <img src="/src/mask_12_seg_1.png" alt="demo_erc_2" style="width: 30%; margin: 10px;">
+    <img src="/src/mask_12_seg_2.png" alt="demo_erc_3" style="width: 30%; margin: 10px;">
+    <img src="/src/mask_12_seg_3.png" alt="demo_erc_4" style="width: 30%; margin: 10px;">
+</div>
+
+
+
+![demo_erc_4](/src/results_12.png)
+![demo_erc_4](final_demo.gif)
+
+
 ### Current Projects
 
 - **Geospatial Analysis of Climate Data:** I am currently involved in a project that focuses on analyzing climate data collected from various geographical locations. By applying machine learning algorithms to this data, we aim to identify patterns and trends in temperature, precipitation, and other meteorological variables over time.
