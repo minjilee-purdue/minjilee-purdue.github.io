@@ -71,8 +71,13 @@ My research in this area centers around leveraging advanced machine learning mod
 
 
 
-![demo_erc_4](/src/results_12.png)
-![demo_erc_4](final_demo.gif)
+![demo_erc_4](/src/results_old_12.png)
+
+Pretrained model and updated result
+
+![demo_erc_4](/src/results_updated_12.png)
+
+![demo_erc_4](/src/final_demo.gif)
 
 
 ### Current Projects
