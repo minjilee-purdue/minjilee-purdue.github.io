@@ -33,7 +33,7 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 ## <a id="Projects"></a>Projects
 
 - Purdue University, [Semantic Segmentation in Geographical Data Analysis](https://github.com/MINJILEE-PURDUE/erc_tree_semantic_segmentation_in_mlops)
-- LG Innotek, [InnoMLOps Platform by SageMaker](https://aws.amazon.com/sagemaker/mlops/?sagemaker-data-wrangler-whats-new.sort-by=item.additionalFields.postDateTime&sagemaker-data-wrangler-whats-new.sort-order=desc)
+- LG Innotek, [InnoMLOps Platform by SageMaker](https://github.com/MINJILEE-PURDUE/inno-mlops)
 - Argonne National Laboratory, [Sage Project](https://github.com/waggle-sensor)
 
 ## <a id="NEWS"></a>NEWS
@@ -42,10 +42,10 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 - **July 17, 2024** Final Thesis Presentation
 - **Mar 15, 2024** Passed Candidate Exam
 - **July 3, 2023** Joined LG Innotek Internship
-- **May 25, 2022** Joined internship at Argonne National Laboratory
+- **May 23, 2022** Joined internship at Argonne National Laboratory
 - **May 21, 2021** Accepted into Ph.D. Program at Purdue University
 - **May 23, 2021** Graduated for my MS Program
-- **May 20, 2021** Joined internship at Argonne National Laboratory Virtually Due to Pandamic
+- **May 17, 2021** Joined internship at Argonne National Laboratory Virtually Due to Pandamic
 - **Aug 20, 2019** Started MS Program at Purdue
 
 ## Selected Projects
