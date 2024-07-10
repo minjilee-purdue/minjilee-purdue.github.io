@@ -30,12 +30,6 @@ As my name suggests, I am originally from Seoul, South Korea, and I lived in Jap
 
 My master's thesis focused on designing a zipper robot integrated with a machine learning algorithm to determine the optimal threshold using sensor data collected from people with physical disabilities. The algorithm leveraged the data to enhance the robot's performance and adaptability, providing a more efficient and user-friendly experience for individuals with varying levels of physical ability.
 
-## <a id="Projects"></a>Projects
-
-- Purdue University, [Semantic Segmentation in Geographical Data Analysis](https://github.com/MINJILEE-PURDUE/erc_tree_semantic_segmentation_in_mlops)
-- LG Innotek, [InnoMLOps Platform by SageMaker](https://github.com/MINJILEE-PURDUE/inno-mlops)
-- Argonne National Laboratory, [Sage Project](https://github.com/waggle-sensor)
-
 ## <a id="NEWS"></a>NEWS
 
 - **Aug 3, 2024** Graduation ceremony for Ph.D.
@@ -47,6 +41,12 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 - **May 23, 2021** Graduated for my MS Program
 - **May 17, 2021** Joined internship at Argonne National Laboratory Virtually Due to Pandamic
 - **Aug 20, 2019** Started MS Program at Purdue
+
+## <a id="Projects"></a>Projects
+
+- Purdue University, [Semantic Segmentation in Geographical Data Analysis](https://github.com/MINJILEE-PURDUE/erc_tree_semantic_segmentation_in_mlops)
+- LG Innotek, [InnoMLOps Platform by SageMaker](https://github.com/MINJILEE-PURDUE/inno-mlops)
+- Argonne National Laboratory, [Sage Project](https://github.com/waggle-sensor)
 
 ## Selected Projects
 
