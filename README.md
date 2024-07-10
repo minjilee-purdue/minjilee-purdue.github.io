@@ -33,6 +33,7 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 ## <a id="Projects"></a>Projects
 
 - Purdue University, [Semantic Segmentation in Geographical Data Analysis](https://github.com/MINJILEE-PURDUE/erc_tree_semantic_segmentation_in_mlops)
+- LG Innotek, [InnoMLOps Platform by SageMaker](https://aws.amazon.com/sagemaker/mlops/?sagemaker-data-wrangler-whats-new.sort-by=item.additionalFields.postDateTime&sagemaker-data-wrangler-whats-new.sort-order=desc)
 - Argonne National Laboratory, [Sage Project](https://github.com/waggle-sensor)
 
 ## <a id="NEWS"></a>NEWS
