@@ -6,7 +6,7 @@
         <a href="#Contact" style="text-decoration: none;">Contact</a>
     </nav>
     <div>
-        <a href="MinjiLee_Curriculum_Vitae.pdf" target="_blank">
+        <a href="MinjiLee_Curriculum_Vitae_Oct1.pdf" target="_blank">
             <img src="pdf-icon.png" alt="Download CV" title="Download CV" width="30" height="30"/>
         </a>
         <a href="2024_MinjiLee_Resume.pdf" target="_blank">
@@ -32,10 +32,10 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 
 ## <a id="NEWS"></a>NEWS
 
-- **Aug 3, 2024** Graduation ceremony for Ph.D.
-- **July 17, 2024** Final Thesis Presentation
+- **Dec 13, 2024** Graduation for Ph.D (Expected).
+- **Nov 17, 2024** Final Thesis Presentation
 - **Mar 15, 2024** Passed Candidate Exam
-- **July 3, 2023** Joined LG Innotek Internship
+- **Jul 3, 2023** Joined LG Innotek Internship
 - **May 23, 2022** Joined internship at Argonne National Laboratory
 - **May 21, 2021** Accepted into Ph.D. Program at Purdue University
 - **May 23, 2021** Graduated for my MS Program
