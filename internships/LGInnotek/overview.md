@@ -5,8 +5,6 @@ To overcome this, parallel processing can be implemented, where multiple tasks a
 
 ---
 
-Below, we describe the mathematical principles underlying this transition.
-
 ##### Sequential Processing Time
 Sequential processing calculates the total time by summing up the execution times of all tasks:
 
