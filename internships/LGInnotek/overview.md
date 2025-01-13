@@ -1,7 +1,7 @@
 #### Transitioning from Sequential to Parallel Processing in Manufacturing
 Electronic component manufacturing companies like [LG Innotek](https://www.lginnotek.com/main/main.do) handle extremely large datasets, such as high-resolution images for camera modules or semiconductor inspection. These datasets require efficient processing methods to ensure high throughput and precision. Traditionally, sequential processing is used, where tasks are executed one after another. However, this approach can become a bottleneck when handling massive data volumes.
 
-To overcome this, parallel processing can be implemented, where multiple tasks are executed simultaneously. The transition from sequential to parallel processing involves understanding the trade-offs between **processing speed**, **resource utilization**, and **system complexity**. Mathematical models like speedup calculations, Amdahl's Law, and load balancing equations help optimize this transition. Additionally, techniques such as Kullback–Leibler divergence are used to minimize discrepancies between process data and operational data, ensuring alignment and efficiency.
+To overcome this, parallel processing can be implemented, where multiple tasks are executed simultaneously. The transition from sequential to parallel processing involves understanding the trade-offs between **processing speed**, **resource utilization**, and **system complexity**. Mathematical models like speedup calculations, and load balancing equations help optimize this transition. Additionally, techniques such as Kullback–Leibler divergence are used to minimize discrepancies between process data and operational data, ensuring alignment and efficiency.
 
 ---
 
@@ -12,9 +12,11 @@ $$
 T_{\text{sequential}} = \sum_{i=1}^{n} t_i
 $$
 
-- \( T_{\text{sequential}} \): Total processing time for sequential execution  
-- \( t_i \): Time taken for task \( i \)  
-- \( n \): Total number of tasks  
+Where:
+
+- $T_{\text{sequential}}$ represents the total processing time for sequential execution  
+- $t_i$ represents the execution time for task $i$  
+- $n$ represents the total number of tasks  
 
 ---
 
@@ -26,8 +28,10 @@ $$
 T_{\text{parallel}} = \max(t_1, t_2, \dots, t_n)
 $$
 
-- \( T_{\text{parallel}} \): Total processing time for parallel execution  
-- \( t_1, t_2, \dots, t_n \): Execution times of individual tasks  
+Where:
+
+- $T_{\text{parallel}}$ represents the total processing time for parallel execution
+- $t_1, t_2, \dots, t_n$ represent execution times of individual tasks
 
 ---
 
@@ -39,20 +43,9 @@ $$
 S = \frac{T_{\text{sequential}}}{T_{\text{parallel}}}
 $$
 
-- \( S \): Speedup factor  
+Where:
 
----
-
-##### Amdahl's Law
-
-Amdahl's Law estimates the theoretical maximum speedup when only a portion of tasks can be parallelized:
-
-$$
-S_{\text{speedup}} = \frac{1}{(1 - P) + \frac{P}{N}}
-$$
-
-- \( P \): Proportion of tasks that can be parallelized (\( 0 \leq P \leq 1 \))  
-- \( N \): Number of parallel processors  
+- $S$ represents the speedup factor
 
 ---
 
@@ -81,6 +74,100 @@ $$
 - \( Q(x) \): Operational data distribution  
 
 ---
+
+
+##### Machine Learning Pipeline Analysis Framework
+###### 1. Execution Time Analysis
+Sequential Pipeline Time
+Total execution time for sequential pipeline:
+
+$$
+T_{\text{sequential}} = \sum_{i=1}^{n} t_i
+$$
+Where:
+
+- $t_i$ is the execution time of model $i$
+- $n$ is the total number of models in the pipeline
+
+Parallel Pipeline Time
+Total execution time for parallel pipeline:
+$$
+T_{\text{parallel}} = \max(t_1, t_2, \dots, t_n)
+$$
+Speedup Calculation
+Speedup achieved by parallel implementation:
+$$
+S = \frac{T_{\text{sequential}}}{T_{\text{parallel}}}
+$$
+2. Output Accuracy Analysis using KL Divergence
+For Each Pipeline Output
+$$
+D_{\text{KL}}(P_{\text{true}} || P_{\text{pipeline}}) = \sum_{x \in X} P_{\text{true}}(x) \log \frac{P_{\text{true}}(x)}{P_{\text{pipeline}}(x)}
+$$
+Where:
+
+$P_{\text{true}}(x)$ is the ground truth probability distribution
+$P_{\text{pipeline}}(x)$ is the pipeline output distribution
+
+Accuracy Comparison Ratio
+$$
+R_{\text{accuracy}} = \frac{D_{\text{KL}}(\text{sequential})}{D_{\text{KL}}(\text{parallel})}
+$$
+
+If $R_{\text{accuracy}} > 1$: Parallel pipeline is more accurate
+If $R_{\text{accuracy}} < 1$: Sequential pipeline is more accurate
+
+3. Resource Utilization Analysis
+Memory Efficiency Ratio
+$$
+E_{\text{memory}} = \frac{M_{\text{sequential}}}{M_{\text{parallel}}}
+$$
+Where:
+
+$M_{\text{sequential}}$ is peak memory usage in sequential pipeline
+$M_{\text{parallel}}$ is peak memory usage in parallel pipeline
+
+GPU Utilization Efficiency
+$$
+E_{\text{GPU}} = \frac{\sum_{t=0}^{T} U_t}{T \cdot N_{\text{GPU}}} \cdot 100%
+$$
+Where:
+
+$U_t$ is GPU utilization at time $t$
+$T$ is total execution time
+$N_{\text{GPU}}$ is number of GPUs
+
+4. Real-world Performance Metrics
+Throughput
+$$
+\text{Throughput} = \frac{\text{Number of processed samples}}{\text{Total time}}
+$$
+Latency Distribution
+$$
+L_{\text{percentile}}(p) = \text{percentile}({l_1, l_2, ..., l_n}, p)
+$$
+Where:
+
+$l_i$ is the latency of sample $i$
+$p$ is the desired percentile (e.g., 95th, 99th)
+
+Comprehensive Performance Score
+Combined score considering all metrics:
+$$
+\text{Score} = w_1\cdot\frac{1}{T} + w_2\cdot\frac{1}{D_{\text{KL}}} + w_3\cdot E_{\text{memory}} + w_4\cdot E_{\text{GPU}}
+$$
+Where:
+
+$w_i$ are weights for each metric (Σw_i = 1)
+$T$ is execution time
+$D_{\text{KL}}$ is KL divergence
+$E_{\text{memory}}$ is memory efficiency
+$E_{\text{GPU}}$ is GPU utilization efficiency
+
+
+
+
+
 
 ##### Key Insights
 
