@@ -1,21 +1,6 @@
 #### Transitioning from Sequential to Parallel Processing in Manufacturing
-- This document explains the mathematical principles behind transitioning from sequential processing to parallel processing in manufacturing environments.
-- It includes efficiency comparisons, key concepts like speedup, and practical applications such as minimizing the gap between process and operational data using Kullback–Leibler divergence.
+Manufacturing companies like LG Innotek handle extremely large datasets, such as high-resolution images for camera modules or semiconductor inspection. These datasets require efficient processing methods to ensure high throughput and precision. Traditionally, sequential processing is used, where tasks are executed one after another. However, this approach can become a bottleneck when handling massive data volumes.
 
+To overcome this, parallel processing can be implemented, where multiple tasks are executed simultaneously. The transition from sequential to parallel processing involves understanding the trade-offs between processing speed, resource utilization, and system complexity. Mathematical models like speedup calculations, Amdahl's Law, and load balancing equations help optimize this transition. Additionally, techniques such as Kullback–Leibler divergence are used to minimize discrepancies between process data and operational data, ensuring alignment and efficiency.
 
-# Transitioning from Sequential to Parallel Processing
-
-## Sequential Processing
-The total processing time for sequential execution is:
-
-`T_sequential = sum(t_i)`
-
-## Parallel Processing
-The total processing time for parallel execution is determined by the longest task:
-
-`T_parallel = max(t_1, t_2, ..., t_n)`
-
-## Speedup
-The speedup achieved by parallelism is calculated as:
-
-`S = T_sequential / T_parallel`
+Below, we describe the mathematical principles underlying this transition.
