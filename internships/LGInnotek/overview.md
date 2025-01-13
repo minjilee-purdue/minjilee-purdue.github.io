@@ -92,7 +92,7 @@ $$
 
 ##### Evaluating Sequential vs Parallel Pipelines Using KL Divergence
 
-This document explains how to use **Kullback–Leibler (KL) Divergence** to evaluate the performance of sequential and parallel processing pipelines in manufacturing environments. The comparison is based on how closely each pipeline’s output aligns with a reference dataset (ground truth).
+Below explains how to use **Kullback–Leibler (KL) Divergence** to evaluate the performance of sequential and parallel processing pipelines in manufacturing environments. The comparison is based on how closely each pipeline’s output aligns with a reference dataset (ground truth).
 
 ---
 
