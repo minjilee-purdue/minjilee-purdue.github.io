@@ -18,7 +18,7 @@ Where:
 - $t_i$ represents the execution time for task $i$  
 - $n$ represents the total number of tasks  
 
----
+
 
 ##### Parallel Processing Time
 
@@ -33,7 +33,7 @@ Where:
 - $T_{\text{parallel}}$ represents the total processing time for parallel execution
 - $t_1, t_2, \dots, t_n$ represent execution times of individual tasks
 
----
+
 
 ##### Speedup Formula
 
@@ -47,7 +47,7 @@ Where:
 
 - $S$ represents the speedup factor
 
----
+
 
 ##### Output Accuracy Analysis using KL Divergence
 
