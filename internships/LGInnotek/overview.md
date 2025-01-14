@@ -68,8 +68,8 @@ $$
 R_{\text{accuracy}} = \frac{D_{\text{KL}}(\text{sequential})}{D_{\text{KL}}(\text{parallel})}
 $$
 
-- If $R_{\text{accuracy}} > 1$: Parallel pipeline is more accurate
-- If $R_{\text{accuracy}} < 1$: Sequential pipeline is more accurate
+- If $R_{\text{accuracy}} < 1$: Parallel pipeline is more accurate
+- If $R_{\text{accuracy}} > 1$: Sequential pipeline is more accurate
 
 ##### Resource Utilization Analysis
 
