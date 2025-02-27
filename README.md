@@ -29,7 +29,7 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 
 ## <a id="NEWS"></a>NEWS
 
-- **May 18, 2024** Graduation for Ph.D (Expected).
+- **May 18, 2025** Graduation for Ph.D.
 - **Nov 17, 2024** Final Thesis Presentation
 - **Mar 15, 2024** Passed Candidate Exam
 - **Jul 3, 2023** Joined LG Innotek Internship
