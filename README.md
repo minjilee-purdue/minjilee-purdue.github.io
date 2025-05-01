@@ -101,11 +101,7 @@ In my work, I utilize a range of tools and techniques for analyzing geographical
 
 ![demo_erc_4](/src/results_updated_12.png)
 
-
-
-### Future Directions
-
-Looking ahead, I'm enthusiastic about delving into the realm of data analysis. During my internship experiences, I adeptly managed geographical and meteorological data analysis projects, engaging in interdisciplinary collaborations and leveraging novel data sources and innovative machine learning techniques. In industry, I was engaged with LG Innotek, where I utilized data-driven insights to tackle urgent environmental issues and contribute to the progression of scientific understanding in this domain.
+![paper](/src/paper.pdf)
 
 ## <a id="Contact"></a>Contact
 
