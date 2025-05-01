@@ -81,9 +81,11 @@ My research in this area centers around leveraging advanced machine learning mod
 #### Fine-Tuning Segment Anything Model (SAM) for Ecological Image Segmentation: Detecting Eastern Red Cedar Trees from UAV Imagery
 I'm excited to share my recent research on improving the Segment Anything Model (SAM) for domain-specific segmentation in vegetation-rich environments. While SAM, trained on the general-purpose SA-1B dataset, demonstrates strong zero-shot capabilities, its performance often falls short in complex ecological scenes.
 
+![demo_erc_4](/ROMAN/sam_figures.png)
+
 To address this, I developed CedarSAM, a fine-tuned variant of SAM tailored to identify and segment Eastern Red Cedar (ERC) trees using high-resolution UAV imagery (5472 × 3648). The project focused on optimizing SAM with a small, custom-labeled dataset, aiming to enhance its segmentation accuracy for a single object class.
 
-![demo_erc_1](/src/image_012_clustering.png)
+![demo_erc_4](/ROMAN/sam_examples.png)
 
 #### Dataset & Annotation Strategy
 I manually annotated 106 aerial images and video frames (20 FPS), each containing ~4 ERC trees. Unlike typical object datasets, four annotation types were generated for each image:
@@ -95,6 +97,8 @@ I manually annotated 106 aerial images and video frames (20 FPS), each containin
 - Instance Masks
 
 - Edge Annotations
+
+![demo_erc_4](/ROMAN/sam_images.png)
 
 These annotations supported diverse prompting strategies for SAM and significantly improved learning context.
 
@@ -122,8 +126,13 @@ Compared to the original SAM, CedarSAM achieved:
 
 Visualizations clearly demonstrated more accurate segmentation and reduced False Positives (FP) and False Negatives (FN), using confusion matrix overlays (Green = TP, Blue = FP, Red = FN).
 
-![demo_erc_4](/src/results_001.png)
-![demo_erc_4](/src/results_002.png)
-![demo_erc_4](/src/results_003.png)
-![demo_erc_4](/src/results_004.png)
+#### Best_Dice Examples
+![demo_erc_4](/ROMAN/best_dice/best_dice_score_distributions.png)
+![demo_erc_4](/ROMAN/best_dice/sample_96_comparison.png)
+
+
+#### Best_Loss Examples
+![demo_erc_4](/ROMAN/best_loss/sample_6_comparison.png)
+
+
 
