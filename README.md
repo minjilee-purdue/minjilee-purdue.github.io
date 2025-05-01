@@ -29,15 +29,23 @@ My master's thesis focused on designing a zipper robot integrated with a machine
 
 ## <a id="NEWS"></a>NEWS
 
-- **May 18, 2025** Graduation for Ph.D.
-- **Nov 17, 2024** Final Thesis Presentation
-- **Mar 15, 2024** Passed Candidate Exam
-- **Jul 3, 2023** Joined LG Innotek Internship
-- **May 23, 2022** Joined internship at Argonne National Laboratory
-- **May 21, 2021** Accepted into Ph.D. Program at Purdue University
-- **May 23, 2021** Graduated for my MS Program
-- **May 17, 2021** Joined internship at Argonne National Laboratory Virtually Due to Pandamic
-- **Aug 20, 2019** Started MS Program at Purdue
+- **August 2025** — Expected graduation from Purdue University with a Ph.D. in Computer and Information Technology, focused on semantic segmentation and generative AI.
+
+- **November 2024** — Presented final Ph.D. thesis on CedarSAM, a fine-tuned model built for real-time segmentation in UAV-based ecological monitoring.
+
+- **March 2024** — Passed Ph.D. candidacy exam, officially advancing to doctoral research phase.
+
+- **June 2023** — Began internship at LG Innotek as a Research Aide Intern in AI Big Data Solutions, focusing on CNN-based hybrid models and YOLOv8 deployment.
+
+- **May 2022** — Started internship at Argonne National Laboratory, automating ML pipelines and deploying Jetson Nano–based edge AI systems.
+
+- **May 2021** — Accepted into the Ph.D. program at Purdue University.
+
+- **May 2021** — Graduated with an M.S. in Computer and Information Technology at Purdue, specializing in multi-agent robotics.
+
+- **May 2021** — Started virtual internship at Argonne National Laboratory, focusing on edge-cloud pipeline integration during the pandemic.
+
+- **August 2019** — Began M.S. program at Purdue University in Multi-Agent Robotics.
 
 ## <a id="Projects"></a>Projects
 
