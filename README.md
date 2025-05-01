@@ -101,8 +101,6 @@ In my work, I utilize a range of tools and techniques for analyzing geographical
 
 ![demo_erc_4](/src/results_updated_12.png)
 
-![paper](/src/paper.pdf)
-
 ## <a id="Contact"></a>Contact
 
 <a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> or <a href="https://www.linkedin.com/in/minji-lee-purdue/" style="color: inherit; text-decoration: none;">LinkedIn</a>
