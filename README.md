@@ -76,31 +76,54 @@ My research in this area centers around leveraging advanced machine learning mod
 
 
 
-### Current Projects
+### Recent Projects
 
-- **Geospatial Analysis of Climate Data:** I am currently involved in a project that focuses on analyzing climate data collected from various geographical locations. By applying machine learning algorithms to this data, we aim to identify patterns and trends in temperature, precipitation, and other meteorological variables over time.
+#### Fine-Tuning Segment Anything Model (SAM) for Ecological Image Segmentation: Detecting Eastern Red Cedar Trees from UAV Imagery
+I'm excited to share my recent research on improving the Segment Anything Model (SAM) for domain-specific segmentation in vegetation-rich environments. While SAM, trained on the general-purpose SA-1B dataset, demonstrates strong zero-shot capabilities, its performance often falls short in complex ecological scenes.
 
-- **Predictive Modeling for Extreme Weather Events:** Another project I am working on involves developing predictive models for extreme weather events, such as hurricanes, floods, and droughts. By combining historical weather data with machine learning techniques, we aim to improve the accuracy of forecasting and enhance preparedness and response efforts.
-
-
+To address this, I developed CedarSAM, a fine-tuned variant of SAM tailored to identify and segment Eastern Red Cedar (ERC) trees using high-resolution UAV imagery (5472 × 3648). The project focused on optimizing SAM with a small, custom-labeled dataset, aiming to enhance its segmentation accuracy for a single object class.
 
 ![demo_erc_1](/src/image_012_clustering.png)
 
+#### Dataset & Annotation Strategy
+I manually annotated 106 aerial images and video frames (20 FPS), each containing ~4 ERC trees. Unlike typical object datasets, four annotation types were generated for each image:
 
+- Bounding Boxes
 
-### Tools and Techniques
+- Object Masks
 
-In my work, I utilize a range of tools and techniques for analyzing geographical and meteorological data, including:
+- Instance Masks
 
-- Geographic Information Systems (GIS) software for spatial analysis and visualization
-- Python libraries such as NumPy, Pandas, and Matplotlib for data manipulation and visualization
-- Machine learning frameworks such as TensorFlow and scikit-learn for building predictive models
-- Statistical methods for analyzing climate data and identifying trends and patterns
+- Edge Annotations
+
+These annotations supported diverse prompting strategies for SAM and significantly improved learning context.
+
   
 ![demo_erc_4](/src/results_old_12.png)
 
 ![demo_erc_4](/src/results_updated_12.png)
 
-## <a id="Contact"></a>Contact
+#### Model Optimization
+Selective Fine-Tuning: Only the mask decoder was updated while keeping encoders frozen to reduce overfitting and training time.
 
-<a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> or <a href="https://www.linkedin.com/in/minji-lee-purdue/" style="color: inherit; text-decoration: none;">LinkedIn</a>
+- Loss Function: Combined Focal Loss (for class imbalance) with Dice Loss (for spatial accuracy).
+
+- Training Framework: Implemented in PyTorch, trained over 40 epochs, with the best performance recorded at Epoch 40.
+
+
+#### Results & Insights
+Compared to the original SAM, CedarSAM achieved:
+
+- +2.6% Dice Score
+
+- +4.6% IoU
+
+- 10% Reduction in Inference Time
+
+Visualizations clearly demonstrated more accurate segmentation and reduced False Positives (FP) and False Negatives (FN), using confusion matrix overlays (Green = TP, Blue = FP, Red = FN).
+
+![demo_erc_4](/src/results_001.png)
+![demo_erc_4](/src/results_002.png)
+![demo_erc_4](/src/results_003.png)
+![demo_erc_4](/src/results_004.png)
+
