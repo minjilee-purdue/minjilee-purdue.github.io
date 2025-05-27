@@ -36,7 +36,7 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/proj/DA/orig_mask.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="/ROMAN/sam_examples.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
         Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts
@@ -51,7 +51,7 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/ROMAN/sam_examples.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="/proj/DA/orig_mask.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
       CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery.
