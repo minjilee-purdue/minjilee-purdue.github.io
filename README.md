@@ -33,6 +33,9 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
 
 ### [Data Acquisition](proj/DA/README.md)
 **Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts**
+
+key words: Instance Segmentation, Ground Sampling Distance, Multimodal
+
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
@@ -48,6 +51,9 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
 
 ### [Model Training](proj/DA/README.md)
 **CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery**
+
+key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
+
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
