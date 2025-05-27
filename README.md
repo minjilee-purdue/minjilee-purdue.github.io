@@ -85,6 +85,23 @@ key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
 
 ---
 
+### [Model Deployment](proj/DA/README.md)
+**TEST**
+
+key words: DEPLOY TEST
+
+<table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td style="width: 40%; height: 300px; vertical-align: top;">
+      <img src="/ROMAN/best_dice/best_dice_score_distributions.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+    </td>
+    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
+      Deployment Test with Docker.
+    </td>
+  </tr>
+</table>
+
+---
 
 
 ### SAM Demo with HuggingFace/Gradio
