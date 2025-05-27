@@ -39,14 +39,10 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
       <img src="/proj/DA/orig_mask.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      In addition to my work in integrating AI and ML in agriculture and forestry, I have a keen interest in the analysis of geographical and meteorological data. This field offers rich opportunities for leveraging machine learning techniques to gain insights into various environmental phenomena and make informed decisions.
+        My research in this area centers around leveraging advanced machine learning models and techniques to analyze large-scale geographical and meteorological datasets. By applying data analysis methods to understand patterns, trends, and anomalies in weather and environmental data, I aim to contribute to our understanding of complex Earth systems and support decision-making processes in areas such as climate adaptation, disaster preparedness, and resource management.
     </td>
   </tr>
 </table>
-
-#### Research Focus
-
-My research in this area centers around leveraging advanced machine learning models and techniques to analyze large-scale geographical and meteorological datasets. By applying data analysis methods to understand patterns, trends, and anomalies in weather and environmental data, I aim to contribute to our understanding of complex Earth systems and support decision-making processes in areas such as climate adaptation, disaster preparedness, and resource management.
 
 ---
 
@@ -60,7 +56,7 @@ My research in this area centers around leveraging advanced machine learning mod
       <img src="/ROMAN/sam_examples.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      In addition to my work in integrating AI and ML in agriculture and forestry, I have a keen interest in the analysis of geographical and meteorological data. This field offers rich opportunities for leveraging machine learning techniques to gain insights into various environmental phenomena and make informed decisions.
+      TEST.
     </td>
   </tr>
 </table>
