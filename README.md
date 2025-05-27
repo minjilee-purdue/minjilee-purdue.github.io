@@ -2,7 +2,6 @@
     <nav>
         <a href="#About Me" style="margin-right: 15px; text-decoration: none;">About Me</a>
         <a href="#Projects" style="margin-right: 15px; text-decoration: none;">Projects</a>
-        <a href="#NEWS" style="margin-right: 15px; text-decoration: none;">NEWS</a>
         <a href="#Contact" style="text-decoration: none;">Contact</a>
     </nav>
     <div>
@@ -17,35 +16,15 @@
         <img src="profile.jpg" alt="Profile Picture" width="200" height="auto">
     </div>
     <div style="flex: 2;">
-        <p>Hi there! My name is Minji Lee. I’m a Ph.D. Candidate in Technology at Purdue University. As a deep learning engineer, I excel in the areas of computer vision, especially semantic segmentation of farming and agriculture images, performance modeling, and source code algorithm optimization. My research aims to bridge the gap between theoretical segmentation models and their practical applications through innovative design and implementation. Currently, I am working as a researcher to utilize SAM (Segment Anything Model) developed by Meta, evaluating its validity as a foundation model in comparison to traditional models such as CNNs. This evaluation aims to validate the hypothesis that SAM is also effective in specific domains. To enhance my UAV-captured dataset, I have generated synthetic images of eastern red cedar trees using diffusion models, which are integrated into the evaluation process to benchmark model performance. Feel free to reach out to me at <a href="mailto:lee3450@purdue.edu" style="color: inherit; text-decoration: none;">lee3450@purdue.edu</a> if you have any questions or would like to connect.</p>
+        <p>Hi there! My name is Minji Lee. I’m a Ph.D. candidate in Technology at Purdue University, specializing in Computer Vision and UAV-based Semantic Segmentation. My research focuses on developing machine learning pipelines for high-resolution aerial imagery, particularly for ecological monitoring and object-level segmentation. I’ve previously interned at LG Innotek as an AI researcher within the AI/Big Data Solutions team, where I worked on generative modeling and synthetic dataset creation. I also completed research internships at Argonne National Laboratory in both 2021 and 2022, contributing to projects in robotics and the Mathematics and Computer Science (MCS) division.</p>
     </div>
 </div>
 
 ## <a id="About Me"></a>About Me
 
-As my name suggests, I am originally from Seoul, South Korea, and I lived in Japan for a while. As a senior undergraduate student in 2016, I had the privilege of visiting Purdue University as part of a visiting scholar group. The experience left a lasting impression, and I was thrilled to return to Purdue after receiving an offer, largely due to the outstanding teamwork.
+As my name suggests, I am originally from Seoul, South Korea, and I also had the opportunity to live in Japan for a time. In 2016, during my senior year as an undergraduate student, I had the privilege of visiting Purdue University as part of a visiting scholar program. That experience left a lasting impression on me, and I was excited to return to Purdue after being offered a Research Assistantship and admission to the graduate program.
 
-My master's thesis focused on designing a zipper robot integrated with a machine learning algorithm to determine the optimal threshold using sensor data collected from people with physical disabilities. The algorithm leveraged the data to enhance the robot's performance and adaptability, providing a more efficient and user-friendly experience for individuals with varying levels of physical ability.
-
-## <a id="NEWS"></a>NEWS
-
-- **August 2025** — Expected graduation from Purdue University with a Ph.D. in Computer and Information Technology, focused on semantic segmentation and generative AI.
-
-- **November 2024** — Presented final Ph.D. thesis on CedarSAM, a fine-tuned model built for real-time segmentation in UAV-based ecological monitoring.
-
-- **March 2024** — Passed Ph.D. candidacy exam, officially advancing to doctoral research phase.
-
-- **June 2023** — Began internship at LG Innotek as a Research Aide Intern in AI Big Data Solutions, focusing on CNN-based hybrid models and YOLOv8 deployment.
-
-- **May 2022** — Started internship at Argonne National Laboratory, automating ML pipelines and deploying Jetson Nano–based edge AI systems.
-
-- **May 2021** — Accepted into the Ph.D. program at Purdue University.
-
-- **May 2021** — Graduated with an M.S. in Computer and Information Technology at Purdue, specializing in multi-agent robotics.
-
-- **May 2021** — Started virtual internship at Argonne National Laboratory, focusing on edge-cloud pipeline integration during the pandemic.
-
-- **August 2019** — Began M.S. program at Purdue University in Multi-Agent Robotics.
+For my master’s thesis, I designed an intelligent zipper robot that integrated a machine learning algorithm to determine the optimal operational threshold based on sensor data collected from individuals with physical disabilities. The system leveraged real-time input to adapt its behavior, enhancing both performance and usability for users with varying levels of physical ability. This research combined robotics, human-centered design, and algorithmic decision-making to support more inclusive assistive technologies.
 
 ## <a id="Projects"></a>Projects
 
