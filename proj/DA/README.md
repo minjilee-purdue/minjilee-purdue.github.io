@@ -7,6 +7,7 @@ Aerial imagery was collected using an **Autel Robotics XT705 UAV** equipped with
 
 Environmental factors (e.g., wind, barometric variation, and GPS drift) introduced a vertical deviation of **±1 meter**, reflecting typical field conditions without RTK correction.
 
+---
 
 ### B. Image Processing Methodology
 To calculate the real-world size of segmented regions, we used the **Ground Sampling Distance (GSD)**, derived from:
@@ -69,6 +70,7 @@ $$
 \text{GSD} \approx 0.002746 \Rightarrow \text{Area} \approx 8.44 ~\text{m²}
 $$
 
+---
 
 ### C. From Instance-Level Annotation to Semantic Reasoning
 Each segmented tree instance is stored as a JSON object:
@@ -105,6 +107,7 @@ These annotations allow the generation of prompts for LLMs (e.g., GPT-4), enabli
 > “Two small ERC trees are located in the lower-right quadrant near one large tree. This configuration suggests a seed dispersal cluster.”
 
 
+
 ## IV. RESULTS AND DISCUSSION
 
 A total of **194 images** and corresponding **segmentation masks** were analyzed, with each image containing on average **four Eastern Red Cedar (ERC) trees**. About **20 outlier instances** were identified.
@@ -121,11 +124,13 @@ These annotations were used for:
 - Ecological summary generation
 
 
+
 ### A. From Perception to Reasoning
 The system integrates vision + spatial data with a language model for:
 - Identifying early-stage vs. established ERC clusters
 - Estimating removal complexity
 - Generating actionable insights for land managers
+
 
 
 ### B. Key Outcomes
@@ -144,5 +149,3 @@ This bridges perception and reasoning, enabling intelligent land management.
 - Sensitive to UAV altitude deviations
 - Reasoning remains rule-based and not adaptive
 
-
-This file is part of the project folder located at `proj/DA/README.md`.
