@@ -39,7 +39,7 @@ key words: Instance Segmentation, Ground Sampling Distance, Multimodal
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/proj/DA/mapping.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="/proj/DA/mapping.png" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
         This study proposes a multimodal approach transforming instance segmentation masks into spatially grounded natural language prompts. By extracting segmented masks as a ground truth and estimating object dimensions, the system categorizes Eastern Red Cedar specimens based on their varying sizes and positions them within a 3×3 spatial grid. These attributes are subsequently translated into interpretive summaries which can suggest early-stage spread that can be addressed through immediate intervention as Agent AI. The descriptions generated support ecological decision-making by identifying removal complexity, prioritizing intervention zones, and estimating operational costs, facilitating resource allocation planning, as larger specimens require mechanical or fire-based removal strategies, while smaller individuals may be managed through manual intervention.
@@ -57,7 +57,7 @@ key words: Training Method, Feature Extraction
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/proj/DA/mask_variations.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="/proj/DA/mask_variations.png" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
       Rule-based ML techniques often require domain expertise and are effective when feature boundaries are well understood. In contrast, DL models excel in complex, high-dimensional environments by automatically extracting relevant features, albeit at the cost of transparency and increased computational demands. Through empirical experiments, we demonstrate how each method performs under different constraints and offer insights into when one approach may be favored over the other. The findings contribute to guiding model selection strategies in data-driven research and real-world applications.
@@ -75,7 +75,7 @@ key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/ROMAN/best_dice/sample_96_comparison.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="/ROMAN/best_dice/sample_96_comparison.png" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
       Although the Segment Anything Model (SAM) has demonstrated remarkable generalization ability in zero-shot segmentation tasks, its performance on specialized or domain-specific imagery, such as aerial vegetation images, may fall short of the precision required for real-world applications. This study investigates the effectiveness of fine-tuning CedarSAM on a small and labeled dataset of aerial tree images to enhance segmentation performance for a specific tree species. Despite the limited dataset size, the results show that the CedarSAM model achieves notable improvements in segmentation accuracy across multiple metrics, including Dice score, IoU, Precision, Recall, and Inference time. These findings highlight the potential of domain adaptation with minimal data, enabling practitioners to deploy SAM effectively in niche applications without the need for large-scale datasets.
@@ -85,7 +85,7 @@ key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
 
 ---
 
-### [Model Deployment](proj/DA/README.md)
+### [Gen AI Model](proj/DA/README.md)
 **Assessing Generative AI for Natural Object Segmentation: Eastern Red Cedar as an Evergreen Benchmark**
 
 key words: Diffusion Model, Generative AI, Vision Transformer
@@ -93,10 +93,10 @@ key words: Diffusion Model, Generative AI, Vision Transformer
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/proj/DA/genAI.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="/proj/DA/genAI.png" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      Given that the Eastern Red Cedar is an evergreen species and remains green across seasons, it offers a consistent visual signature in aerial imagery, making mask annotation more tractable. This study evaluates the effectiveness of automated annotation using diffusion models, leveraging this trait. By assessing the performance of generative AI for natural object segmentation, we explore its practical potential in ecological applications, particularly for season-invariant vegetation like Eastern Red Cedar.
+      The Eastern Red Cedar, an evergreen species, maintains its green foliage throughout the year, regardless of seasonal changes. This characteristic provides a consistent visual signature in UAV-captured aerial imagery, which significantly simplifies the process of creating segmentation mask annotations. In this study, we investigate the feasibility and effectiveness of using diffusion models—a type of generative AI—to automate the annotation process for ERC trees. By leveraging the persistent green hue of ERCs across various temporal conditions, we aim to reduce manual labeling efforts while maintaining high-quality segmentation results. We evaluate the performance of the diffusion-based approach in generating accurate instance-level masks, considering both spatial consistency and ecological interpretability. This research also addresses a broader question: how effective are current generative AI techniques, such as diffusion models, in segmenting naturally occurring vegetation, particularly when applied to field data that exhibit complex backgrounds and environmental variability?
     </td>
   </tr>
 </table>
