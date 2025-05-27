@@ -39,7 +39,7 @@ key words: Instance Segmentation, Ground Sampling Distance, Multimodal
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/ROMAN/sam_examples.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="/proj/DA/mapping.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
         This study proposes a multimodal approach transforming instance segmentation masks into spatially grounded natural language prompts. By extracting segmented masks as a ground truth and estimating object dimensions, the system categorizes Eastern Red Cedar specimens based on their varying sizes and positions them within a 3×3 spatial grid. These attributes are subsequently translated into interpretive summaries which can suggest early-stage spread that can be addressed through immediate intervention as Agent AI. The descriptions generated support ecological decision-making by identifying removal complexity, prioritizing intervention zones, and estimating operational costs. This facilitates resource allocation planning, as larger specimens typically require mechanical or fire-based removal strategies, while smaller individuals may be managed through manual intervention.
@@ -57,7 +57,7 @@ key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/proj/DA/orig_mask.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="/proj/DA/mask_variations.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
       Although the Segment Anything Model (SAM) has demonstrated remarkable generalization ability in zero-shot segmentation tasks, its performance on specialized or domain-specific imagery, such as aerial vegetation images, may fall short of the precision required for real-world applications. This study investigates the effectiveness of fine-tuning CedarSAM on a small and labeled dataset of aerial tree images to enhance segmentation performance for a specific tree species. Despite the limited dataset size, the results show that the CedarSAM model achieves notable improvements in segmentation accuracy across multiple metrics, including Dice score, Intersection over Union, Precision, Recall, and Inference time. These findings highlight the potential of domain adaptation with minimal data, enabling practitioners to deploy SAM effectively in niche applications without the need for large-scale datasets.
