@@ -26,7 +26,7 @@ As my name suggests, I am originally from Seoul, South Korea, and I also had the
 
 For my master’s thesis, I designed an intelligent zipper robot that integrated a machine learning algorithm to determine the optimal operational threshold based on sensor data collected from individuals with physical disabilities. The system leveraged real-time input to adapt its behavior, enhancing both performance and usability for users with varying levels of physical ability. This research combined robotics, human-centered design, and algorithmic decision-making to support more inclusive assistive technologies.
 
-## <a id="Projects Overview"></a>Projects
+## <a id="Projects"></a>Projects
 
 My research centers on building an end-to-end machine learning pipeline for UAV-based semantic segmentation, particularly for identifying Eastern Red Cedar trees in high-resolution aerial imagery. This pipeline integrates raw data collection, preprocessing, annotation, model development, evaluation, and deployment—tailored for ecological applications where precision and scalability are critical.
 
@@ -156,6 +156,11 @@ Visualizations clearly demonstrated more accurate segmentation and reduced False
 
 #### Best_Loss Examples
 ![demo_erc_4](/ROMAN/best_loss/sample_6_comparison.png)
+
+
+## <a id="Contact"></a>Contact
+
+lee3450@purdue.edu or https://www.linkedin.com/in/minji-lee-purdue/
 
 
 
