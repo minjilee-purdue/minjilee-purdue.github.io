@@ -86,17 +86,17 @@ key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
 ---
 
 ### [Model Deployment](proj/DA/README.md)
-**TEST**
+**Assessing Generative AI for Natural Object Segmentation: Eastern Red Cedar as an Evergreen Benchmark**
 
-key words: DEPLOY TEST
+key words: Diffusion Model, Generative AI, Vision Transformer
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/ROMAN/best_dice/best_dice_score_distributions.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src=""/proj/DA/genAI.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      Deployment Test with Docker.
+      Given that the Eastern Red Cedar is an evergreen species and remains green across seasons, it offers a consistent visual signature in aerial imagery, making mask annotation more tractable. This study evaluates the effectiveness of automated annotation using diffusion models, leveraging this trait. By assessing the performance of generative AI for natural object segmentation, we explore its practical potential in ecological applications, particularly for season-invariant vegetation like Eastern Red Cedar.
     </td>
   </tr>
 </table>
