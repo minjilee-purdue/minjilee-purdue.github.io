@@ -32,7 +32,7 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
 
 
 ### [Data Acquisition](proj/DA/README.md)
-
+**Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts**
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
@@ -46,8 +46,8 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
 
 ---
 
-### [Model Training](proj/DA/README.md)  
-
+### [Model Training](proj/DA/README.md)
+**CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery**
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
@@ -59,17 +59,22 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
   </tr>
 </table>
 
+---
 
+### [Model Evaluation](proj/DA/README.md)
+**CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery**
+<table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td style="width: 40%; height: 300px; vertical-align: top;">
+      <img src="/ROMAN/best_dice/sample_96_comparison.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
+    </td>
+    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
+      CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery.
+    </td>
+  </tr>
+</table>
 
-
-
-
-
-#### Research Focus
-
-My research in this area centers around leveraging advanced machine learning models and techniques to analyze large-scale geographical and meteorological datasets. By applying data analysis methods to understand patterns, trends, and anomalies in weather and environmental data, I aim to contribute to our understanding of complex Earth systems and support decision-making processes in areas such as climate adaptation, disaster preparedness, and resource management.
-
-----
+---
 
 
 
