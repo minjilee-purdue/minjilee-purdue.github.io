@@ -1,3 +1,7 @@
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 <table>
 <tr>
 <td width="40%">
@@ -15,7 +19,8 @@ This section describes an end-to-end pipeline for semantic segmentation of Easte
 
 ## III. IMPLEMENTATION
 
-### [Data Acquisition](proj/DA/README.md)  
+### [Data Acquisition](proj/DA/README.md)
+
 **Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts**
 
 ### A. Data Collection
@@ -30,9 +35,9 @@ Environmental factors (e.g., wind, barometric variation, and GPS drift) introduc
 
 To calculate the real-world size of segmented regions, we used the **Ground Sampling Distance (GSD)**, derived from:
 
-$$
+\[
 \text{GSD (m/pixel)} = \frac{S_w \cdot H}{f \cdot I_w}
-$$
+\]
 
 Where:
 
@@ -43,13 +48,13 @@ Where:
 
 Then:
 
-$$
+\[
 \text{Pixel Area (m²)} = \text{GSD}^2
-$$
+\]
 
-$$
+\[
 \text{Object Area (m²)} = N \cdot \text{GSD}^2
-$$
+\]
 
 #### Example Calculation
 
@@ -61,35 +66,35 @@ $$
 
 Step 1:
 
-$$
+\[
 \text{GSD} = \frac{0.0063 \cdot 30}{0.013 \cdot 5472} \approx 0.002656 ~\text{m/pixel}
-$$
+\]
 
 Step 2:
 
-$$
+\[
 \text{Pixel Area} = (0.002656)^2 \approx 0.00000705 ~\text{m²}
-$$
+\]
 
 Step 3:
 
-$$
+\[
 \text{Estimated Canopy Area} = 1,116,819 \cdot 0.00000705 \approx 7.88 ~\text{m²}
-$$
+\]
 
 Variation due to altitude:
 
 - At $H = 29$ m:
 
-$$
+\[
 \text{GSD} \approx 0.002566 \Rightarrow \text{Area} \approx 7.35 ~\text{m²}
-$$
+\]
 
 - At $H = 31$ m:
 
-$$
+\[
 \text{GSD} \approx 0.002746 \Rightarrow \text{Area} \approx 8.44 ~\text{m²}
-$$
+\]
 
 ---
 
@@ -176,3 +181,4 @@ This bridges perception and reasoning, enabling intelligent land management.
 - Designed specifically for ERC detection  
 - Sensitive to UAV altitude deviations  
 - Reasoning remains rule-based and not adaptive
+
