@@ -39,7 +39,7 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
       <img src="/ROMAN/sam_examples.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-        Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts
+        Eastern Red Cedar trees are an invasive species threatening biodiversity and agricultural productivity across North American rangelands. While UAV-based semantic segmentation utilizing the Segment Anything Model offers a scalable detection solution, conventional models predominantly generate pixel-level masks that lack human interpretability and provide limited ecological insight. This study proposes a novel multimodal approach transforming color-coded instance segmentation masks into spatially grounded natural language prompts. By extracting segmented masks as a ground truth and estimating object dimensions, the system categorizes ERC specimens based on their varying sizes and positions them within a 3×3 spatial grid. These attributes are subsequently translated into interpretive summaries which can suggest early-stage spread that can be addressed through immediate intervention. The descriptions generated extend beyond basic visualization, actively supporting ecological decision-making through identification of removal complexity, prioritization of intervention zones, and estimation of operational costs. The distinction between small and large trees facilitates resource allocation planning, as larger specimens typically necessitate mechanical or fire-based removal strategies, while smaller individuals may be managed through manual intervention. This framework functions as an interpretable bridge between machine-generated output and human reasoning, supporting dialogue-based monitoring and enabling the creation of vision-language training datasets for domain-specific AI systems.
     </td>
   </tr>
 </table>
@@ -69,7 +69,7 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
       <img src="/ROMAN/best_dice/sample_96_comparison.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery.
+      Although the Segment Anything Model has demonstrated remarkable generalization ability in zero-shot segmentation tasks, its performance on specialized or domain-specific imagery, such as aerial vegetation images, may fall short of the precision required for real-world applications. This study investigates the effectiveness of fine-tuning CedarSAM on a small and labeled dataset of aerial tree images to enhance segmentation performance for a specific tree species — Eastern Red Cedar. Despite the limited dataset size, the results show that the CedarSAM model achieves notable improvements in segmentation accuracy across multiple metrics, including Dice score, Intersection over Union, Precision, Recall, and Inference time. These findings highlight the potential of domain adaptation with minimal data, enabling practitioners to deploy SAM effectively in niche applications without the need for large-scale datasets..
     </td>
   </tr>
 </table>
