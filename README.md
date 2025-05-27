@@ -30,7 +30,7 @@ For my master’s thesis, I designed an intelligent zipper robot that integrated
 
 My research centers on building an end-to-end machine learning pipeline for UAV-based semantic segmentation, particularly for identifying Eastern Red Cedar trees in high-resolution aerial imagery. This pipeline integrates raw data collection, preprocessing, annotation, model development, evaluation, and deployment—tailored for ecological applications where precision and scalability are critical.
 
-### [Data Acquisition](#Proj-DA): Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts
+### [Data Acquisition](proj/DA/README.md) Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts
 
 
 In addition to my work in integrating AI and ML in agriculture and forestry, I have a keen interest in the analysis of geographical and meteorological data. This field offers rich opportunities for leveraging machine learning techniques to gain insights into various environmental phenomena and make informed decisions.
