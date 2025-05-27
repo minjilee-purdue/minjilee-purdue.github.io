@@ -50,9 +50,9 @@ key words: Instance Segmentation, Ground Sampling Distance, Multimodal
 ---
 
 ### [Model Training](proj/DA/README.md)
-**CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery**
+**Exploring the Boundary Between Human-Defined Machine Learning and Data-Driven Deep Learning**
 
-key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
+key words: Training Method, Feature Extraction
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
@@ -60,7 +60,7 @@ key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
       <img src="/proj/DA/mask_variations.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      The model is trained entirely from scratch without utilizing any pretrained weights, initializing all parameters randomly and allows the model to learn representations solely from the target dataset. The motivation behind this decision lies in the domain-specific nature of the data, which consists of UAV-captured imagery that differs significantly from natural image datasets commonly used in transfer learning. The architecture is designed manually using standard convolutional neural network (CNN) components, and all layers are trained using supervised learning with ground-truth annotations. Images are preprocessed by resizing, normalizing, and augmenting to enhance the model’s generalization. A cross-entropy loss function is employed for binary classification, and the model is optimized using the Adam optimizer with a fixed learning rate. Performance is monitored on a separate validation set to detect overfitting and to assess model convergence. Despite requiring more training epochs and being sensitive to dataset size and quality, training from scratch enables full adaptation to the target domain.
+      Rule-based ML techniques often require domain expertise and are effective when feature boundaries are well understood. In contrast, DL models excel in complex, high-dimensional environments by automatically extracting relevant features, albeit at the cost of transparency and increased computational demands. Through empirical experiments, we demonstrate how each method performs under different constraints and offer insights into when one approach may be favored over the other. The findings contribute to guiding model selection strategies in data-driven research and real-world applications.
     </td>
   </tr>
 </table>
