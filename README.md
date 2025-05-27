@@ -68,14 +68,17 @@ key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
 ---
 
 ### [Model Evaluation](proj/DA/README.md)
-**TEST**
+**CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery**
+
+key words: Mask-Decoder Tuning, Vision Transformer, Semantic Segmentation
+
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
       <img src="/ROMAN/best_dice/sample_96_comparison.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      datasets.
+      Although the Segment Anything Model (SAM) has demonstrated remarkable generalization ability in zero-shot segmentation tasks, its performance on specialized or domain-specific imagery, such as aerial vegetation images, may fall short of the precision required for real-world applications. This study investigates the effectiveness of fine-tuning CedarSAM on a small and labeled dataset of aerial tree images to enhance segmentation performance for a specific tree species. Despite the limited dataset size, the results show that the CedarSAM model achieves notable improvements in segmentation accuracy across multiple metrics, including Dice score, Intersection over Union, Precision, Recall, and Inference time. These findings highlight the potential of domain adaptation with minimal data, enabling practitioners to deploy SAM effectively in niche applications without the need for large-scale datasets.
     </td>
   </tr>
 </table>
