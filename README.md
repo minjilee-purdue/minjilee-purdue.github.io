@@ -26,13 +26,9 @@ As my name suggests, I am originally from Seoul, South Korea, and I also had the
 
 For my master’s thesis, I designed an intelligent zipper robot that integrated a machine learning algorithm to determine the optimal operational threshold based on sensor data collected from individuals with physical disabilities. The system leveraged real-time input to adapt its behavior, enhancing both performance and usability for users with varying levels of physical ability. This research combined robotics, human-centered design, and algorithmic decision-making to support more inclusive assistive technologies.
 
-## <a id="Projects"></a>Projects
+## <a id="Projects Overview"></a>Projects
 
-- Purdue University, [Semantic Segmentation in Geographical Data Analysis](https://github.com/MINJILEE-PURDUE/erc_tree_semantic_segmentation_in_mlops)
-- LG Innotek, [InnoMLOps Platform by SageMaker](https://github.com/MINJILEE-PURDUE/inno-mlops)
-- Argonne National Laboratory, [Sage Project](https://github.com/waggle-sensor)
-
-## Selected Projects
+My research centers on building an end-to-end machine learning pipeline for UAV-based semantic segmentation, particularly for identifying Eastern Red Cedar trees in high-resolution aerial imagery. This pipeline integrates raw data collection, preprocessing, annotation, model development, evaluation, and deployment—tailored for ecological applications where precision and scalability are critical.
 
 ### Semantic Segmentation
 In addition to my work in integrating AI and ML in agriculture and forestry, I have a keen interest in the analysis of geographical and meteorological data. This field offers rich opportunities for leveraging machine learning techniques to gain insights into various environmental phenomena and make informed decisions.
