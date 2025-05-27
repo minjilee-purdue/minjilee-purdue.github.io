@@ -33,12 +33,12 @@ My research centers on building an end-to-end machine learning pipeline for UAV-
 ### [Data Acquisition](proj/DA/README.md)
 **Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts**
 
-<table>
+<table style="width: 100%; table-layout: fixed;">
   <tr>
-    <td style="width: 40%;">
-      <img src="/proj/DA/orig_mask.png" alt="demo_erc_2" width="100%">
+    <td style="width: 40%; height: 300px; vertical-align: top;">
+      <img src="/proj/DA/orig_mask.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
-    <td style="padding-left: 20px; vertical-align: top;">
+    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
       In addition to my work in integrating AI and ML in agriculture and forestry, I have a keen interest in the analysis of geographical and meteorological data. This field offers rich opportunities for leveraging machine learning techniques to gain insights into various environmental phenomena and make informed decisions.
     </td>
   </tr>
@@ -53,16 +53,20 @@ My research in this area centers around leveraging advanced machine learning mod
 ### [Model Training](proj/DA/README.md)  
 **CedarSAM: Fine-Tuning Segment Anything Model for Semantic Segmentation of Eastern Red Cedar Vegetation from UAV Imagery**
 
-<table>
+
+<table style="width: 100%; table-layout: fixed;">
   <tr>
-    <td style="width: 40%;">
-      <img src="/ROMAN/sam_examples.png" alt="demo_erc_2" width="100%">
+    <td style="width: 40%; height: 300px; vertical-align: top;">
+      <img src="/ROMAN/sam_examples.png" alt="demo_erc_2" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
-    <td style="padding-left: 20px; vertical-align: top;">
+    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
       In addition to my work in integrating AI and ML in agriculture and forestry, I have a keen interest in the analysis of geographical and meteorological data. This field offers rich opportunities for leveraging machine learning techniques to gain insights into various environmental phenomena and make informed decisions.
     </td>
   </tr>
 </table>
+
+
+
 
 
 
