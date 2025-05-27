@@ -10,49 +10,51 @@ Environmental factors (e.g., wind, barometric variation, and GPS drift) introduc
 
 To calculate the real-world size of segmented regions, we used the **Ground Sampling Distance (GSD)**, derived from:
 
-$$\text{GSD (m/pixel)} = \frac{S_w \cdot H}{f \cdot I_w}$$
+\\[\text{GSD (m/pixel)} = \frac{S_w \cdot H}{f \cdot I_w}\\]
 
 Where:
-* $S_w$ = Sensor width (m)
-* $H$ = Flight altitude AGL (m)
-* $f$ = Focal length (m)
-* $I_w$ = Image width (pixels)
+* \\(S_w\\) = Sensor width (m)
+* \\(H\\) = Flight altitude AGL (m)
+* \\(f\\) = Focal length (m)
+* \\(I_w\\) = Image width (pixels)
 
 Then:
 
-$$\text{Pixel Area (m²)} = \text{GSD}^2$$
+\\[\text{Pixel Area (m²)} = \text{GSD}^2\\]
 
-$$\text{Object Area (m²)} = N \cdot \text{GSD}^2$$
+\\[\text{Object Area (m²)} = N \cdot \text{GSD}^2\\]
 
 ---
 
 **Example Calculation**
 
-* $S_w = 0.0063$ m
-* $f = 0.013$ m
-* $I_w = 5472$ px
-* $H = 30$ m
-* $N = 1,116,819$ (white mask pixels)
+* \\(S_w = 0.0063\\) m
+* \\(f = 0.013\\) m
+* \\(I_w = 5472\\) px
+* \\(H = 30\\) m
+* \\(N = 1,116,819\\) (white mask pixels)
 
 **Step 1:**
 
-$$\text{GSD} = \frac{0.0063 \cdot 30}{0.013 \cdot 5472} \approx 0.002656 \text{ m/pixel}$$
+\\[\text{GSD} = \frac{0.0063 \cdot 30}{0.013 \cdot 5472} \approx 0.002656 \text{ m/pixel}\\]
 
 **Step 2:**
 
-$$\text{Pixel Area} = (0.002656)^2 \approx 0.00000705 \text{ m²}$$
+\\[\text{Pixel Area} = (0.002656)^2 \approx 0.00000705 \text{ m²}\\]
 
 **Step 3:**
 
-$$\text{Estimated Canopy Area} = 1,116,819 \cdot 0.00000705 \approx 7.88 \text{ m²}$$
+\\[\text{Estimated Canopy Area} = 1,116,819 \cdot 0.00000705 \approx 7.88 \text{ m²}\\]
 
 **Variation due to altitude:**
 
-* At $H = 29$ m:
-  $$\text{GSD} \approx 0.002566 \Rightarrow \text{Area} \approx 7.35 \text{ m²}$$
+* At \\(H = 29\\) m:
+  
+  \\[\text{GSD} \approx 0.002566 \Rightarrow \text{Area} \approx 7.35 \text{ m²}\\]
 
-* At $H = 31$ m:
-  $$\text{GSD} \approx 0.002746 \Rightarrow \text{Area} \approx 8.44 \text{ m²}$$
+* At \\(H = 31\\) m:
+  
+  \\[\text{GSD} \approx 0.002746 \Rightarrow \text{Area} \approx 8.44 \text{ m²}\\]
 
 ---
 
