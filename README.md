@@ -160,7 +160,7 @@ Visualizations clearly demonstrated more accurate segmentation and reduced False
 
 ## <a id="Contact"></a>Contact
 
-lee3450@purdue.edu or https://www.linkedin.com/in/minji-lee-purdue/
+If you have any questions, feel free to contact me at [lee3450@purdue.edu](mailto:lee3450@purdue.edu) or connect on [Minji Lee LinkedIn](https://www.linkedin.com/in/minji-lee-purdue/).
 
 
 
