@@ -20,9 +20,7 @@ Where:
 
 Then:
 
-\\[\text{Pixel Area (m²)} = \text{GSD}^2\\]
-
-\\[\text{Object Area (m²)} = N \cdot \text{GSD}^2\\]
+<p><strong>GSD (m/pixel) = (S<sub>w</sub> × H) / (f × I<sub>w</sub>)</strong></p>
 
 ---
 
