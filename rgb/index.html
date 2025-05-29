@@ -1,1 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Vector Visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        #container {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .color-input {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .slider {
+            width: 150px;
+            height: 5px;
+            border-radius: 5px;
+            outline: none;
+            -webkit-appearance: none;
+            background: #333;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+        
+        .color-display {
+            width: 100px;
+            height: 50px;
+            border: 2px solid #555;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .info {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .preset-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .preset-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        .preset-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 RGB Color as 3D Vector Visualization</h1>
+    
+    <div class="controls">
+        <div class="color-input">
+            <label>Red (R)</label>
+            <input type="range" id="redSlider" class="slider" min="0" max="255" value="0">
+            <span id="redValue">0</span>
+        </div>
+        
+        <div class="color-input">
+            <label>Green (G)</label>
+            <input type="range" id="greenSlider" class="slider" min="0" max="255" value="0">
+            <span id="greenValue">0</span>
+        </div>
+        
+        <div class="color-input">
+            <label>Blue (B)</label>
+            <input type="range" id="blueSlider" class="slider" min="0" max="255" value="0">
+            <span id="blueValue">0</span>
+        </div>
+        
+        <div class="color-display" id="colorDisplay">
+            #000000<br>(0,0,0)
+        </div>
+    </div>
+    
+    <div class="preset-buttons">
+        <button class="preset-btn" style="background: black; color: white;" onclick="setColor(0,0,0)">Black</button>
+        <button class="preset-btn" style="background: white; color: black;" onclick="setColor(255,255,255)">White</button>
+        <button class="preset-btn" style="background: red; color: white;" onclick="setColor(255,0,0)">Red</button>
+        <button class="preset-btn" style="background: lime; color: black;" onclick="setColor(0,255,0)">Green</button>
+        <button class="preset-btn" style="background: blue; color: white;" onclick="setColor(0,0,255)">Blue</button>
+        <button class="preset-btn" style="background: yellow; color: black;" onclick="setColor(255,255,0)">Yellow</button>
+        <button class="preset-btn" style="background: magenta; color: white;" onclick="setColor(255,0,255)">Magenta</button>
+        <button class="preset-btn" style="background: cyan; color: black;" onclick="setColor(0,255,255)">Cyan</button>
+    </div>
+    
+    <div id="container"></div>
+    
+    <div class="info">
+        <h3>📊 Vector Information</h3>
+        <p><strong>Vector Coordinates:</strong> <span id="vectorCoords">(0, 0, 0)</span></p>
+        <p><strong>Vector Magnitude:</strong> <span id="vectorMagnitude">0</span></p>
+        <p><strong>Distance from Origin:</strong> <span id="vectorDistance">0</span></p>
+        <p><strong>Maximum Possible Distance:</strong> 441.67 (distance to white)</p>
+    </div>
 
+    <script>
+        // Three.js 초기화
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 600, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(document.getElementById('container').offsetWidth, 600);
+        renderer.setClearColor(0x111111);
+        document.getElementById('container').appendChild(renderer.domElement);
+
+        // RGB 좌표계 생성 (0~255 범위를 0~5 범위로 스케일링)
+        const scale = 5 / 255;
+
+        // 축 생성
+        function createAxis(color, direction) {
+            const geometry = new THREE.CylinderGeometry(0.02, 0.02, 5, 8);
+            const material = new THREE.MeshBasicMaterial({ color: color });
+            const axis = new THREE.Mesh(geometry, material);
+            
+            if (direction === 'x') {
+                axis.rotation.z = Math.PI / 2;
+                axis.position.x = 2.5;
+            } else if (direction === 'y') {
+                axis.position.y = 2.5;
+            } else if (direction === 'z') {
+                axis.rotation.x = Math.PI / 2;
+                axis.position.z = 2.5;
+            }
+            
+            return axis;
+        }
+
+        // 축 추가
+        scene.add(createAxis(0xff0000, 'x')); // Red axis
+        scene.add(createAxis(0x00ff00, 'y')); // Green axis
+        scene.add(createAxis(0x0000ff, 'z')); // Blue axis
+
+        // 축 라벨 (간단한 구체로 표현)
+        function createLabel(color, position) {
+            const geometry = new THREE.SphereGeometry(0.1, 8, 8);
+            const material = new THREE.MeshBasicMaterial({ color: color });
+            const label = new THREE.Mesh(geometry, material);
+            label.position.copy(position);
+            return label;
+        }
+
+        scene.add(createLabel(0xff0000, new THREE.Vector3(5.2, 0, 0))); // R
+        scene.add(createLabel(0x00ff00, new THREE.Vector3(0, 5.2, 0))); // G
+        scene.add(createLabel(0x0000ff, new THREE.Vector3(0, 0, 5.2))); // B
+
+        // RGB 큐브 와이어프레임
+        const cubeGeometry = new THREE.BoxGeometry(5, 5, 5);
+        const cubeEdges = new THREE.EdgesGeometry(cubeGeometry);
+        const cubeMaterial = new THREE.LineBasicMaterial({ color: 0x444444 });
+        const cubeWireframe = new THREE.LineSegments(cubeEdges, cubeMaterial);
+        cubeWireframe.position.set(2.5, 2.5, 2.5);
+        scene.add(cubeWireframe);
+
+        // 벡터 화살표
+        let vectorArrow;
+        let vectorLine;
+        let colorSphere;
+
+        function createVector(r, g, b) {
+            // 기존 벡터 제거
+            if (vectorArrow) scene.remove(vectorArrow);
+            if (vectorLine) scene.remove(vectorLine);
+            if (colorSphere) scene.remove(colorSphere);
+
+            const x = r * scale;
+            const y = g * scale;
+            const z = b * scale;
+
+            // 벡터 라인
+            const lineGeometry = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(0, 0, 0),
+                new THREE.Vector3(x, y, z)
+            ]);
+            const lineMaterial = new THREE.LineBasicMaterial({ color: 0xffffff, linewidth: 3 });
+            vectorLine = new THREE.Line(lineGeometry, lineMaterial);
+            scene.add(vectorLine);
+
+            // 벡터 끝점에 색상 구체
+            const sphereGeometry = new THREE.SphereGeometry(0.15, 16, 16);
+            const sphereMaterial = new THREE.MeshBasicMaterial({ 
+                color: new THREE.Color(r/255, g/255, b/255) 
+            });
+            colorSphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+            colorSphere.position.set(x, y, z);
+            scene.add(colorSphere);
+
+            // 화살표 머리
+            const arrowGeometry = new THREE.ConeGeometry(0.1, 0.3, 8);
+            const arrowMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+            vectorArrow = new THREE.Mesh(arrowGeometry, arrowMaterial);
+            
+            // 화살표 방향 설정
+            const direction = new THREE.Vector3(x, y, z).normalize();
+            vectorArrow.lookAt(direction);
+            vectorArrow.position.set(x, y, z);
+            scene.add(vectorArrow);
+        }
+
+        // 카메라 위치
+        camera.position.set(8, 8, 8);
+        camera.lookAt(2.5, 2.5, 2.5);
+
+        // 컨트롤
+        const redSlider = document.getElementById('redSlider');
+        const greenSlider = document.getElementById('greenSlider');
+        const blueSlider = document.getElementById('blueSlider');
+        const redValue = document.getElementById('redValue');
+        const greenValue = document.getElementById('greenValue');
+        const blueValue = document.getElementById('blueValue');
+        const colorDisplay = document.getElementById('colorDisplay');
+        const vectorCoords = document.getElementById('vectorCoords');
+        const vectorMagnitude = document.getElementById('vectorMagnitude');
+        const vectorDistance = document.getElementById('vectorDistance');
+
+        function updateColor() {
+            const r = parseInt(redSlider.value);
+            const g = parseInt(greenSlider.value);
+            const b = parseInt(blueSlider.value);
+
+            redValue.textContent = r;
+            greenValue.textContent = g;
+            blueValue.textContent = b;
+
+            const hex = '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+            colorDisplay.style.backgroundColor = hex;
+            colorDisplay.innerHTML = `${hex}<br>(${r},${g},${b})`;
+
+            vectorCoords.textContent = `(${r}, ${g}, ${b})`;
+            
+            const magnitude = Math.sqrt(r*r + g*g + b*b);
+            vectorMagnitude.textContent = magnitude.toFixed(2);
+            vectorDistance.textContent = magnitude.toFixed(2);
+
+            createVector(r, g, b);
+        }
+
+        function setColor(r, g, b) {
+            redSlider.value = r;
+            greenSlider.value = g;
+            blueSlider.value = b;
+            updateColor();
+        }
+
+        redSlider.addEventListener('input', updateColor);
+        greenSlider.addEventListener('input', updateColor);
+        blueSlider.addEventListener('input', updateColor);
+
+        // 초기 벡터 생성
+        updateColor();
+
+        // 마우스로 카메라 회전
+        let isMouseDown = false;
+        let mouseX = 0;
+        let mouseY = 0;
+
+        renderer.domElement.addEventListener('mousedown', (event) => {
+            isMouseDown = true;
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+        });
+
+        document.addEventListener('mouseup', () => {
+            isMouseDown = false;
+        });
+
+        document.addEventListener('mousemove', (event) => {
+            if (isMouseDown) {
+                const deltaX = event.clientX - mouseX;
+                const deltaY = event.clientY - mouseY;
+                
+                const spherical = new THREE.Spherical();
+                spherical.setFromVector3(camera.position.clone().sub(new THREE.Vector3(2.5, 2.5, 2.5)));
+                spherical.theta -= deltaX * 0.01;
+                spherical.phi += deltaY * 0.01;
+                spherical.phi = Math.max(0.1, Math.min(Math.PI - 0.1, spherical.phi));
+                
+                camera.position.setFromSpherical(spherical).add(new THREE.Vector3(2.5, 2.5, 2.5));
+                camera.lookAt(2.5, 2.5, 2.5);
+                
+                mouseX = event.clientX;
+                mouseY = event.clientY;
+            }
+        });
+
+        // 애니메이션 루프
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // 반응형 처리
+        window.addEventListener('resize', () => {
+            const container = document.getElementById('container');
+            camera.aspect = container.offsetWidth / 600;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.offsetWidth, 600);
+        });
+    </script>
+</body>
+</html>
