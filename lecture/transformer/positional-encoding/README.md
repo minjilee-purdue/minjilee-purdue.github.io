@@ -1,4 +1,4 @@
-### Positional Encoding Visualization
+### Positional Encoding Visualization: [PE Demo](https://minjilee-purdue.github.io/lecture/transformer/positional-encoding/index.html)
 
 #### An interactive visualization demonstrating how sine and cosine functions transform scalar position values into high-dimensional vectors in Transformer models.
 
@@ -41,7 +41,7 @@ Key Concepts Demonstrated:
 - Explains why different dimensions capture different temporal patterns
 
 ##### Live Demo
-GitHub Pages: [PE Demo](https://minjilee-purdue.github.io/lecture/transformer/positional-encoding/index.html)
+GitHub Pages: [Demo is available](https://minjilee-purdue.github.io/lecture/transformer/positional-encoding/index.html)
 Inspired by the "Attention Is All You Need" paper
 Built with Chart.js for beautiful visualizations
 Educational content aimed at making complex concepts accessible
