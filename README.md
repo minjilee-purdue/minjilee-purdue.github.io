@@ -104,6 +104,26 @@ key words: Diffusion Model, Generative AI, Vision Transformer
 ---
 
 
+### [Lec: Positional-Encoding](https://github.com/minjilee-purdue/minjilee-purdue.github.io/tree/main/lecture/transformer/positional-encoding/)
+**Positional Encoding Visualization: How sine/cosine functions transform scalar positions into high-dimensional vectors**
+
+key words: Transformer, Positional Encoding, Trigonometric Identities
+
+<table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td style="width: 40%; height: 300px; vertical-align: top;">
+      <img src="/lecture/transformer/positional-encoding/pe-demo1.png" style="width: 100%; height: 100%; object-fit: contain;">
+    </td>
+    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
+        An interactive visualization demonstrating how sine and cosine functions transform scalar position values into high-dimensional vectors in Transformer models. This project illustrates the mathematical process behind positional encoding in Transformer architectures: PE(pos, 2i) = sin(pos / 10000^(2i/d_model)) PE(pos, 2i+1) = cos(pos / 10000^(2i/d_model)).
+    </td>
+  </tr>
+</table>
+
+---
+
+
+
 ### SAM Demo with HuggingFace/Gradio
 
 ![demo_erc_4](/src/final_demo.gif)
