@@ -1,6 +1,6 @@
-#### Positional Encoding Visualization
+### Positional Encoding Visualization
 
-### An interactive visualization demonstrating how sine and cosine functions transform scalar position values into high-dimensional vectors in Transformer models.
+#### An interactive visualization demonstrating how sine and cosine functions transform scalar position values into high-dimensional vectors in Transformer models.
 
 This project illustrates the mathematical process behind positional encoding in Transformer architectures:
 
