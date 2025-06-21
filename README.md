@@ -1,6 +1,7 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <nav>
         <a href="#About Me" style="margin-right: 15px; text-decoration: none;">About Me</a>
+        <a href="#Work experiences" style="margin-right: 15px; text-decoration: none;">Work Experiences</a>
         <a href="#Projects" style="margin-right: 15px; text-decoration: none;">Projects</a>
         <a href="#Contact" style="text-decoration: none;">Contact</a>
     </nav>
@@ -16,7 +17,7 @@
         <img src="profile.jpg" alt="Profile Picture" width="200" height="auto">
     </div>
     <div style="flex: 2;">
-        <p>Hi there! My name is Minji Lee. I’m a Ph.D. candidate in Technology at Purdue University, specializing in Computer Vision and UAV-based Semantic Segmentation. My research focuses on developing machine learning pipelines for high-resolution aerial imagery, particularly for ecological monitoring and object-level segmentation. I’ve previously interned at LG Innotek as an AI researcher within the AI/Big Data Solutions team, where I worked on generative modeling and synthetic dataset creation. I also completed research internships at Argonne National Laboratory in both 2021 and 2022, contributing to projects in robotics and the Mathematics and Computer Science (MCS) division.</p>
+        <p>Hi there! I’m Minji Lee, a Ph.D. candidate in Technology at Purdue University, specializing in Computer Vision and UAV-based Semantic Segmentation. My research focuses on developing machine learning pipelines for high-resolution aerial imagery, with a particular emphasis on ecological monitoring and object-level segmentation. I’m expected to graduate in Summer 2025.</p>
     </div>
 </div>
 
@@ -25,6 +26,11 @@
 As my name suggests, I am originally from Seoul, South Korea, and I also had the opportunity to live in Japan for a time. In 2016, during my senior year as an undergraduate student, I had the privilege of visiting Purdue University as part of a visiting scholar program. That experience left a lasting impression on me, and I was excited to return to Purdue after being offered a Research Assistantship and admission to the graduate program.
 
 For my master’s thesis, I designed an intelligent zipper robot that integrated a machine learning algorithm to determine the optimal operational threshold based on sensor data collected from individuals with physical disabilities. The system leveraged real-time input to adapt its behavior, enhancing both performance and usability for users with varying levels of physical ability. This research combined robotics, human-centered design, and algorithmic decision-making to support more inclusive assistive technologies.
+
+
+## <a id="Work Experiences"></a>Work Experiences
+I’ve previously interned at LG Innotek as an AI researcher within the AI/Big Data Solutions team, where I worked on generative modeling and synthetic dataset creation. I also completed research internships at Argonne National Laboratory in both 2021 and 2022, contributing to projects in robotics and the Mathematics and Computer Science (MCS) division.
+
 
 ## <a id="Projects"></a>Projects
 
