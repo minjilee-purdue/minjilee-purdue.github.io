@@ -41,11 +41,11 @@ Key Concepts Demonstrated:
 - Explains why different dimensions capture different temporal patterns
 
 ##### Live Demo
-GitHub Pages: [PE Demo](https://minjilee-purdue.github.io/lecture/transformer/index.html)
+GitHub Pages: [PE Demo](https://minjilee-purdue.github.io/lecture/transformer/positional-encoding/index.html)
 Inspired by the "Attention Is All You Need" paper
 Built with Chart.js for beautiful visualizations
 Educational content aimed at making complex concepts accessible
 
 📧 Contact
-Your Name - Minji Lee/lee3450@purdue.edu
-Project Link: https://github.com/minjilee-purdue/
+
+Minji Lee/lee3450@purdue.edu
