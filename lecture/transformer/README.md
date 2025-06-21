@@ -41,7 +41,7 @@ Key Concepts Demonstrated:
 - Explains why different dimensions capture different temporal patterns
 
 ##### Live Demo
-GitHub Pages: Your-Username.github.io/positional-encoding-visualization
+GitHub Pages: [PE Demo](https://minjilee-purdue.github.io/lecture/transformer/index.html)
 Inspired by the "Attention Is All You Need" paper
 Built with Chart.js for beautiful visualizations
 Educational content aimed at making complex concepts accessible
