@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency and Period Relationship Visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: bold;
+        }
+        
+        .concept-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+        }
+        
+        .concept-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .wave-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .wave-demo {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .wave-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .high-freq {
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .med-freq {
+            border-left: 4px solid #f39c12;
+        }
+        
+        .low-freq {
+            border-left: 4px solid #27ae60;
+        }
+        
+        .chart-wrapper {
+            height: 200px;
+            margin: 15px 0;
+        }
+        
+        .wave-description {
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .control-group {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .slider {
+            width: 200px;
+            height: 5px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+            -webkit-appearance: none;
+            margin: 10px 0;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3498db;
+            cursor: pointer;
+        }
+        
+        .value-display {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 5px;
+        }
+        
+        .interactive-section {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #fd79a8, #fdcb6e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        
+        .formula-box {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            font-size: 1.3em;
+        }
+        
+        .period-marker {
+            position: absolute;
+            bottom: -30px;
+            height: 25px;
+            border-left: 2px solid #e74c3c;
+            border-right: 2px solid #e74c3c;
+            border-bottom: 2px solid #e74c3c;
+        }
+        
+        .period-label {
+            position: absolute;
+            bottom: -50px;
+            font-size: 0.9em;
+            color: #e74c3c;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🌊 Frequency and Period Relationship</h1>
+        
+        <div class="formula-box">
+            Period = 1 / Frequency<br>
+            Low Frequency = Long Period &nbsp;&nbsp;&nbsp; High Frequency = Short Period
+        </div>
+
+        <!-- Concept explanation -->
+        <div class="concept-section">
+            <div class="concept-title">📊 Waveform Comparison by Frequency</div>
+            
+            <div class="wave-container">
+                <div class="wave-demo high-freq">
+                    <div class="wave-title" style="color: #e74c3c;">🔴 High Frequency (Fast Oscillation)</div>
+                    <div class="chart-wrapper">
+                        <canvas id="highFreqChart"></canvas>
+                    </div>
+                    <div class="wave-description">Short period → Fast repetition → Detects adjacent patterns</div>
+                </div>
+                
+                <div class="wave-demo med-freq">
+                    <div class="wave-title" style="color: #f39c12;">🟡 Medium Frequency (Normal Oscillation)</div>
+                    <div class="chart-wrapper">
+                        <canvas id="medFreqChart"></canvas>
+                    </div>
+                    <div class="wave-description">Medium period → Detects mid-range patterns</div>
+                </div>
+                
+                <div class="wave-demo low-freq">
+                    <div class="wave-title" style="color: #27ae60;">🟢 Low Frequency (Slow Oscillation)</div>
+                    <div class="chart-wrapper">
+                        <canvas id="lowFreqChart"></canvas>
+                    </div>
+                    <div class="wave-description">Long period → Slow repetition → Detects distant patterns</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Real examples in positional encoding -->
+        <div class="concept-section">
+            <div class="concept-title">🎯 Real Examples in Positional Encoding</div>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Dimension</th>
+                        <th>Frequency</th>
+                        <th>Period (Positions)</th>
+                        <th>Pattern Detected</th>
+                        <th>Real Application</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>0, 2</strong></td>
+                        <td>High (1.0)</td>
+                        <td>Short (6.3)</td>
+                        <td>Adjacent positions</td>
+                        <td>"the cat" order</td>
+                    </tr>
+                    <tr>
+                        <td><strong>50, 52</strong></td>
+                        <td>Medium (0.4)</td>
+                        <td>Medium (15.4)</td>
+                        <td>Word group relations</td>
+                        <td>Phrase structure</td>
+                    </tr>
+                    <tr>
+                        <td><strong>200, 202</strong></td>
+                        <td>Low (0.03)</td>
+                        <td>Long (229)</td>
+                        <td>Sentence relations</td>
+                        <td>Paragraph structure</td>
+                    </tr>
+                    <tr>
+                        <td><strong>500, 502</strong></td>
+                        <td>Very Low (0.0001)</td>
+                        <td>Very Long (50,633)</td>
+                        <td>Entire document</td>
+                        <td>Long-form structure</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Interactive demo -->
+        <div class="interactive-section">
+            <div class="concept-title">🎮 Interactive Frequency Experiment</div>
+            <p style="text-align: center; margin-bottom: 20px;">Adjust the slider to see how frequency affects the waveform!</p>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label><strong>Frequency Control</strong></label>
+                    <input type="range" min="0.1" max="2.0" step="0.1" value="1.0" class="slider" id="freqSlider">
+                    <div class="value-display" id="freqValue">1.0</div>
+                    <div>Frequency</div>
+                </div>
+                <div class="control-group">
+                    <label><strong>Calculated Period</strong></label>
+                    <div class="value-display" id="periodValue">6.28</div>
+                    <div>Period (Position units)</div>
+                </div>
+            </div>
+            
+            <div class="wave-demo">
+                <div class="chart-wrapper">
+                    <canvas id="interactiveChart"></canvas>
+                </div>
+                <div class="wave-description" id="interactiveDescription">
+                    Frequency 1.0 → Period 6.28 → Medium speed oscillation
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison of real positional encoding dimensions -->
+        <div class="concept-section">
+            <div class="concept-title">📈 Real Positional Encoding Dimension Waveforms</div>
+            <p style="text-align: center; margin-bottom: 20px;">Compare waveforms of different dimensions used in actual Transformers</p>
+            
+            <div class="wave-demo">
+                <div class="chart-wrapper" style="height: 400px;">
+                    <canvas id="realDimensionsChart"></canvas>
+                </div>
+                <div class="wave-description">
+                    <span class="highlight">Red line (Dim 0)</span>: High frequency, fast changes | 
+                    <span class="highlight">Yellow line (Dim 50)</span>: Medium frequency | 
+                    <span class="highlight">Green line (Dim 200)</span>: Low frequency, slow changes
+                </div>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 15px; text-align: center; margin-top: 40px;">
+            <h3>🎯 Key Insights</h3>
+            <p><strong>Frequency and Period are Inversely Related</strong></p>
+            <p>• <span style="background: rgba(255,255,255,0.2); padding: 3px 8px; border-radius: 5px;">Low Frequency = Long Period = Slow Change = Distant Relationships</span><br>
+            • <span style="background: rgba(255,255,255,0.2); padding: 3px 8px; border-radius: 5px;">High Frequency = Short Period = Fast Change = Close Relationships</span><br>
+            • These various scales combine to create complete positional information!</p>
+        </div>
+    </div>
+
+    <script>
+        // Chart variables
+        let highFreqChart, medFreqChart, lowFreqChart, interactiveChart, realDimensionsChart;
+        
+        // Default settings
+        Chart.defaults.font.family = "'Segoe UI', Arial, sans-serif";
+        Chart.defaults.plugins.legend.display = false;
+        
+        // Common chart options
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Position'
+                    }
+                },
+                y: {
+                    min: -1,
+                    max: 1,
+                    title: {
+                        display: true,
+                        text: 'Encoding Value'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        };
+
+        // Position data generation
+        const positions = Array.from({length: 101}, (_, i) => i * 0.5); // 0 to 50, step 0.5
+        
+        // High frequency chart
+        function initHighFreqChart() {
+            const ctx = document.getElementById('highFreqChart').getContext('2d');
+            const frequency = 1.0;
+            const data = positions.map(pos => Math.sin(pos * frequency));
+            
+            highFreqChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: positions,
+                    datasets: [{
+                        data: data,
+                        borderColor: '#e74c3c',
+                        backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0
+                    }]
+                },
+                options: commonOptions
+            });
+        }
+        
+        // Medium frequency chart
+        function initMedFreqChart() {
+            const ctx = document.getElementById('medFreqChart').getContext('2d');
+            const frequency = 0.4;
+            const data = positions.map(pos => Math.sin(pos * frequency));
+            
+            medFreqChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: positions,
+                    datasets: [{
+                        data: data,
+                        borderColor: '#f39c12',
+                        backgroundColor: 'rgba(243, 156, 18, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0
+                    }]
+                },
+                options: commonOptions
+            });
+        }
+        
+        // Low frequency chart
+        function initLowFreqChart() {
+            const ctx = document.getElementById('lowFreqChart').getContext('2d');
+            const frequency = 0.1;
+            const data = positions.map(pos => Math.sin(pos * frequency));
+            
+            lowFreqChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: positions,
+                    datasets: [{
+                        data: data,
+                        borderColor: '#27ae60',
+                        backgroundColor: 'rgba(39, 174, 96, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0
+                    }]
+                },
+                options: commonOptions
+            });
+        }
+        
+        // Interactive chart
+        function initInteractiveChart() {
+            const ctx = document.getElementById('interactiveChart').getContext('2d');
+            
+            interactiveChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: positions,
+                    datasets: [{
+                        data: [],
+                        borderColor: '#3498db',
+                        backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        borderWidth: 3
+                    }]
+                },
+                options: commonOptions
+            });
+            
+            updateInteractiveChart();
+        }
+        
+        // Real dimensions comparison chart
+        function initRealDimensionsChart() {
+            const ctx = document.getElementById('realDimensionsChart').getContext('2d');
+            const d_model = 512;
+            
+            // Real positional encoding calculation
+            function calculatePE(pos, dim) {
+                const i = Math.floor(dim / 2);
+                const angle = pos / Math.pow(10000, (2 * i) / d_model);
+                return dim % 2 === 0 ? Math.sin(angle) : Math.cos(angle);
+            }
+            
+            const datasets = [
+                {
+                    label: 'Dimension 0 (High Frequency)',
+                    data: positions.map(pos => calculatePE(pos, 0)),
+                    borderColor: '#e74c3c',
+                    backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                    tension: 0.4,
+                    pointRadius: 0
+                },
+                {
+                    label: 'Dimension 50 (Medium Frequency)',
+                    data: positions.map(pos => calculatePE(pos, 50)),
+                    borderColor: '#f39c12',
+                    backgroundColor: 'rgba(243, 156, 18, 0.1)',
+                    tension: 0.4,
+                    pointRadius: 0
+                },
+                {
+                    label: 'Dimension 200 (Low Frequency)',
+                    data: positions.map(pos => calculatePE(pos, 200)),
+                    borderColor: '#27ae60',
+                    backgroundColor: 'rgba(39, 174, 96, 0.1)',
+                    tension: 0.4,
+                    pointRadius: 0
+                }
+            ];
+            
+            realDimensionsChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: positions,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Position'
+                            }
+                        },
+                        y: {
+                            min: -1,
+                            max: 1,
+                            title: {
+                                display: true,
+                                text: 'Encoding Value'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Update interactive chart
+        function updateInteractiveChart() {
+            const frequency = parseFloat(document.getElementById('freqSlider').value);
+            const period = 2 * Math.PI / frequency;
+            
+            document.getElementById('freqValue').textContent = frequency.toFixed(1);
+            document.getElementById('periodValue').textContent = period.toFixed(2);
+            
+            const data = positions.map(pos => Math.sin(pos * frequency));
+            interactiveChart.data.datasets[0].data = data;
+            interactiveChart.update();
+            
+            // Update description
+            let description;
+            if (frequency >= 1.5) {
+                description = `Frequency ${frequency} → Period ${period.toFixed(2)} → Very fast oscillation (detects adjacent patterns)`;
+            } else if (frequency >= 0.8) {
+                description = `Frequency ${frequency} → Period ${period.toFixed(2)} → Fast oscillation (detects close patterns)`;
+            } else if (frequency >= 0.4) {
+                description = `Frequency ${frequency} → Period ${period.toFixed(2)} → Medium oscillation (detects mid-range patterns)`;
+            } else {
+                description = `Frequency ${frequency} → Period ${period.toFixed(2)} → Slow oscillation (detects distant patterns)`;
+            }
+            
+            document.getElementById('interactiveDescription').textContent = description;
+        }
+        
+        // Event listeners
+        document.getElementById('freqSlider').addEventListener('input', updateInteractiveChart);
+        
+        // Initialization
+        document.addEventListener('DOMContentLoaded', function() {
+            initHighFreqChart();
+            initMedFreqChart();
+            initLowFreqChart();
+            initInteractiveChart();
+            initRealDimensionsChart();
+        });
+    </script>
+</body>
+</html>
