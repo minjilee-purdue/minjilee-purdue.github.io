@@ -1,4 +1,4 @@
-### Positional Encoding Visualization: [PE Demo](https://minjilee-purdue.github.io/lecture/transformer/positional-encoding/index.html)
+### Positional Encoding Visualization: [PE Demo for Correlation between Dim and Encoding](https://minjilee-purdue.github.io/lecture/transformer/positional-encoding/index.html) and [PE Demo for Frequency](https://minjilee-purdue.github.io/lecture/transformer/positional-encoding/index_period.html)
 
 #### An interactive visualization demonstrating how sine and cosine functions transform scalar position values into high-dimensional vectors in Transformer models.
 
