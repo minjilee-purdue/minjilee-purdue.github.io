@@ -47,5 +47,5 @@ Built with Chart.js for beautiful visualizations
 Educational content aimed at making complex concepts accessible
 
 📧 Contact
-Your Name - @your_twitter - your.email@example.com
-Project Link: https://github.com/your-username/positional-encoding-visualization
+Your Name - Minji Lee/lee3450@purdue.edu
+Project Link: https://github.com/minjilee-purdue/
