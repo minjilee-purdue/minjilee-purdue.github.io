@@ -32,8 +32,8 @@ For my master’s thesis, I designed an intelligent zipper robot that integrated
 I’ve previously interned at LG Innotek as an AI researcher within the AI/Big Data Solutions team, where I worked on generative modeling and synthetic dataset creation. I also completed research internships at Argonne National Laboratory in both 2021 and 2022, contributing to projects in robotics and the Mathematics and Computer Science (MCS) division.
 
 
-### [LG Innotek](link)
-**Multimodal Semantic Segmentation of Eastern Red Cedar Trees: Integrating Visual Masks and Natural Language Prompts**
+### [LG Innotek](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/LGInnotek/auto_encoder.py)
+**Latent Space Modeling and Synthetic Data Generation in Manufacturing**
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
@@ -41,7 +41,7 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
       <img src="/proj/DA/autoencoder.png" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-        I developed a hybrid model combining CNN architectures to analyze the transition from sequential to parallel processing in manufacturing workflows. Also, I benchmarked and optimized a real-time monitoring system using YOLOv8 on Amazon EC2, which enhanced resource utilization and improved parallel operation tracking. To ensure better model alignment, I applied Kullback–Leibler divergence to reduce discrepancies between process and operational data. In addition, I explored AutoEncoder-based dimensionality reduction and generative models to compress sensor data and simulate realistic production scenarios for anomaly detection and synthetic data augmentation.
+        I developed a hybrid model combining CNN architectures to analyze the transition from sequential to parallel processing in manufacturing workflows. Also, I benchmarked and optimized a real-time monitoring system on Amazon EC2, which enhanced resource utilization and improved parallel operation tracking. To ensure better model alignment, I applied Kullback–Leibler divergence to reduce discrepancies between process and operational data. In addition, I explored AutoEncoder-based dimensionality reduction and generative models to compress sensor data and simulate realistic production scenarios for anomaly detection and synthetic data augmentation.
     </td>
   </tr>
 </table>
