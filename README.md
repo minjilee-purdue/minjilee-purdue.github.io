@@ -23,7 +23,7 @@
 
 ## <a id="About Me"></a>About Me
 
-As my name suggests, I am originally from Seoul, South Korea, and I also had the opportunity to live in Japan for a time. In 2016, during my senior year as an undergraduate student, I had the privilege of visiting Purdue University as part of a visiting scholar program. That experience left a lasting impression on me, and I was excited to return to Purdue after being offered a Research Assistantship and admission to the graduate program.
+I am originally from Seoul, South Korea, and I also had the opportunity to live in Japan for a time. In 2016, during my senior year as an undergraduate student, I had the privilege of visiting Purdue University as part of a visiting scholar program. That experience left a lasting impression on me, and I was excited to return to Purdue after being offered a Research Assistantship and admission to the graduate program.
 
 For my master’s thesis, I designed an intelligent zipper robot that integrated a machine learning algorithm to determine the optimal operational threshold based on sensor data collected from individuals with physical disabilities. The system leveraged real-time input to adapt its behavior, enhancing both performance and usability for users with varying levels of physical ability. This research combined robotics, human-centered design, and algorithmic decision-making to support more inclusive assistive technologies.
 
