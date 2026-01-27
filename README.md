@@ -17,7 +17,7 @@
         <img src="profile.jpg" alt="Profile Picture" width="200" height="auto">
     </div>
     <div style="flex: 2;">
-        <p>Hi there! I’m Minji Lee, a Ph.D. candidate in Technology at Purdue University, specializing in Computer Vision and UAV-based Semantic Segmentation. My research focuses on developing machine learning pipelines for high-resolution aerial imagery, with a particular emphasis on ecological monitoring and object-level segmentation. I’m expected to graduate in Summer 2025.</p>
+        <p>Hi there! I’m Minji Lee, a Ph.D. candidate in Technology at Purdue University, specializing in Computer Vision and UAV-based Semantic Segmentation. My research focuses on developing machine learning pipelines for high-resolution aerial imagery, with a particular emphasis on ecological monitoring and object-level segmentation. I completed my PhD program in August 2025.</p>
     </div>
 </div>
 
