@@ -48,7 +48,7 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
   </tr>
 </table>
 
-### [Argonne National Laboratory](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/LGInnotek/REAME.md)
+### [Argonne National Laboratory](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/ANL/README.md)
 **Ansible, NVIDIA Jetson Nano, Edge Deployment**
 
 <table style="width: 100%; table-layout: fixed;">
