@@ -33,18 +33,32 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
 
 
 ### [LG Innotek](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/LGInnotek/REAME.md)
-**Latent Space Modeling and Synthetic Data Generation in Manufacturing**
+**Deep Learning Pipeline - Docker + AWS + CI/CD**
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="/proj/DA/autoencoder.png" style="width: 100%; height: 100%; object-fit: contain;">
+      <img src="internships/LGInnotek/video_screenshot.png" style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-        I developed a hybrid model combining CNN architectures to analyze the transition from sequential to parallel processing in manufacturing workflows. Also, I benchmarked and optimized a real-time monitoring system on Amazon EC2, which enhanced resource utilization and improved parallel operation tracking. To ensure better model alignment, I applied Kullback–Leibler divergence to reduce discrepancies between process and operational data. In addition, I explored AutoEncoder-based dimensionality reduction and generative models to compress sensor data and simulate realistic production scenarios for anomaly detection and synthetic data augmentation.
+        A fully containerized ML pipeline that trains a CNN on MNIST and serves predictions via a REST API. Each stage (data, training, serving) runs in its own Docker container. Training runs on a GPU EC2 instance that terminates after completion. Serving runs on a long-lived CPU EC2 instance. All artifacts flow through S3.
     </td>
   </tr>
 </table>
+
+<table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td style="width: 40%; height: 300px; vertical-align: top;">
+      <img src="internships/LGInnotek/video_screenshot.png" style="width: 100%; height: 100%; object-fit: contain;">
+    </td>
+    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
+        A fully containerized ML pipeline that trains a CNN on MNIST and serves predictions via a REST API. Each stage (data, training, serving) runs in its own Docker container. Training runs on a GPU EC2 instance that terminates after completion. Serving runs on a long-lived CPU EC2 instance. All artifacts flow through S3.
+    </td>
+  </tr>
+</table>
+
+
+
 
 
 ## <a id="Projects"></a>Projects
