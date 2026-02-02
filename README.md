@@ -64,7 +64,7 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
 </table>
 
 ### [Argonne National Laboratory](https://sagecontinuum.org/)
-**Sensor Visualization**
+**SaaS, Tableau, Edge-to-Cloud**
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
@@ -73,7 +73,7 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
            style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: middle;">
-        Integrated multimodal environmental sensor streams including wildfire alerts, acoustic monitoring, and weather telemetry on IBM edge nodes by aligning timestamped data across heterogeneous sources, applying standardized preprocessing, and exporting structured outputs into unified JSON schemas for downstream real-time analytics and decision support.
+        Integrated multimodal environmental sensor streams including wildfire alerts, acoustic monitoring, and weather telemetry on IBM edge nodes by aligning timestamped data across heterogeneous sources, applying standardized preprocessing, and exporting unified JSON schemas to support SaaS-based real-time analytics pipelines and Tableau decision-support dashboards.
     </td>
   </tr>
 </table>
