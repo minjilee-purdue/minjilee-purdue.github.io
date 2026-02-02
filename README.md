@@ -54,12 +54,11 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: middle;">
-      <img src="internships/LGInnotek/video_screenshot.png"
+      <img src="internships/ANL/ansible.png"
            style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: middle;">
-        A fully containerized ML pipeline that trains a CNN on MNIST and serves predictions via a REST API. Each stage (data, training, serving) runs in its own Docker container. Training runs on a GPU EC2 instance that terminates after completion. Serving runs on a long-lived CPU EC2 instance. All artifacts flow through S3.
-        + Defect position heatmap analysis was performed on anonymized optical manufacturing data from LG Innotek. The labeled dataset had masked metadata and was used for exploratory quality control analysis.
+        Ansible-based automation for NVIDIA Jetson Nano edge deployment, covering environment setup, dependency control, CI/CD-style automation, monitoring and logging, scalable fleet provisioning, reproducibility, failure recovery, and production readiness, improving overall consistency, scalability, and reproducible deployment workflows.
     </td>
   </tr>
 </table>
