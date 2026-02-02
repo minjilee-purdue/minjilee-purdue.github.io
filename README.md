@@ -42,6 +42,7 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: top;">
         A fully containerized ML pipeline that trains a CNN on MNIST and serves predictions via a REST API. Each stage (data, training, serving) runs in its own Docker container. Training runs on a GPU EC2 instance that terminates after completion. Serving runs on a long-lived CPU EC2 instance. All artifacts flow through S3.
+        + Defect position heatmap analysis was performed on anonymized optical manufacturing data from LG Innotek. The labeled dataset had masked metadata and was used for exploratory quality control analysis.
     </td>
   </tr>
 </table>
