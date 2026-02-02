@@ -2,6 +2,15 @@
 
 A fully containerized ML pipeline that trains a CNN on MNIST and serves predictions via a REST API. Each stage (data, training, serving) runs in its own Docker container. Training runs on a GPU EC2 instance that terminates after completion. Serving runs on a long-lived CPU EC2 instance. All artifacts flow through S3.
 
+
+
+
+https://github.com/user-attachments/assets/9de72954-833a-42d3-9f78-d5a592d70e32
+
+
+
+
+
 ---
 
 ## Table of Contents
@@ -782,10 +791,3 @@ curl -X POST http://localhost:8000/predict \
 # 5. Check health
 curl http://localhost:8000/health
 ```
-
-
-
-
-<video controls src="./path/to/your/video.mov" type="video/mov" width="600">
-  Your browser does not support the video tag.
-</video>
