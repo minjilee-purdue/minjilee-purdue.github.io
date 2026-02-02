@@ -70,7 +70,7 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td style="width: 40%; height: 300px; vertical-align: middle;">
-      <img src="internships/LGInnotek/video_screenshot.png"
+      <img src="internships/ANL/anl_data.png"
            style="width: 100%; height: 100%; object-fit: contain;">
     </td>
     <td style="width: 60%; padding-left: 20px; vertical-align: middle;">
