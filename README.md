@@ -29,11 +29,43 @@ For my master’s thesis, I designed an intelligent zipper robot that integrated
 
 
 ## <a id="Work Experiences"></a>Work Experiences
-I’ve previously interned at LG Innotek as an AI researcher within the AI/Big Data Solutions team, where I worked on generative modeling and synthetic dataset creation. I also completed research internships at Argonne National Laboratory in both 2021 and 2022, contributing to projects in robotics and the Mathematics and Computer Science (MCS) division.
+I’ve previously interned at LG Innotek as an AI researcher within the AI/Big Data Solutions team. I also completed research internships at Argonne National Laboratory in both 2021 and 2022, contributing to projects in robotics and the Mathematics and Computer Science (MCS) division.
 
 
 ### [LG Innotek](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/LGInnotek/REAME.md)
 **Deep Learning Pipeline - Docker + AWS + CI/CD**
+
+<table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td style="width: 40%; height: 300px; vertical-align: middle;">
+      <img src="internships/LGInnotek/video_screenshot.png"
+           style="width: 100%; height: 100%; object-fit: contain;">
+    </td>
+    <td style="width: 60%; padding-left: 20px; vertical-align: middle;">
+        A fully containerized ML pipeline that trains a CNN on MNIST and serves predictions via a REST API. Each stage (data, training, serving) runs in its own Docker container. Training runs on a GPU EC2 instance that terminates after completion. Serving runs on a long-lived CPU EC2 instance. All artifacts flow through S3.
+        + Defect position heatmap analysis was performed on anonymized optical manufacturing data from LG Innotek. The labeled dataset had masked metadata and was used for exploratory quality control analysis.
+    </td>
+  </tr>
+</table>
+
+### [Argonne National Laboratory](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/LGInnotek/REAME.md)
+**Deep Learning Pipeline - Docker + AWS + CI/CD**
+
+<table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td style="width: 40%; height: 300px; vertical-align: middle;">
+      <img src="internships/LGInnotek/video_screenshot.png"
+           style="width: 100%; height: 100%; object-fit: contain;">
+    </td>
+    <td style="width: 60%; padding-left: 20px; vertical-align: middle;">
+        A fully containerized ML pipeline that trains a CNN on MNIST and serves predictions via a REST API. Each stage (data, training, serving) runs in its own Docker container. Training runs on a GPU EC2 instance that terminates after completion. Serving runs on a long-lived CPU EC2 instance. All artifacts flow through S3.
+        + Defect position heatmap analysis was performed on anonymized optical manufacturing data from LG Innotek. The labeled dataset had masked metadata and was used for exploratory quality control analysis.
+    </td>
+  </tr>
+</table>
+
+### [Argonne National Laboratory](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/LGInnotek/REAME.md)
+**Sensor Visualization**
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
