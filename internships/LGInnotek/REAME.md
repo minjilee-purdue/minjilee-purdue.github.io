@@ -782,3 +782,10 @@ curl -X POST http://localhost:8000/predict \
 # 5. Check health
 curl http://localhost:8000/health
 ```
+
+
+
+
+<video controls src="./path/to/your/video.mov" type="video/mov" width="600">
+  Your browser does not support the video tag.
+</video>
