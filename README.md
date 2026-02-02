@@ -46,19 +46,6 @@ I’ve previously interned at LG Innotek as an AI researcher within the AI/Big D
   </tr>
 </table>
 
-<table style="width: 100%; table-layout: fixed;">
-  <tr>
-    <td style="width: 40%; height: 300px; vertical-align: top;">
-      <img src="internships/LGInnotek/defect_heatmap.png" style="width: 100%; height: 100%; object-fit: contain;">
-    </td>
-    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-        Defect position heatmap analysis was performed on anonymized optical manufacturing data from LG Innotek. The labeled dataset had masked metadata and was used for exploratory quality control analysis.
-    </td>
-  </tr>
-</table>
-
-
-
 
 
 ## <a id="Projects"></a>Projects
