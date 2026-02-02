@@ -32,7 +32,7 @@ For my master’s thesis, I designed an intelligent zipper robot that integrated
 I’ve previously interned at LG Innotek as an AI researcher within the AI/Big Data Solutions team, where I worked on generative modeling and synthetic dataset creation. I also completed research internships at Argonne National Laboratory in both 2021 and 2022, contributing to projects in robotics and the Mathematics and Computer Science (MCS) division.
 
 
-### [LG Innotek](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/LGInnotek/auto_encoder.py)
+### [LG Innotek](https://github.com/minjilee-purdue/minjilee-purdue.github.io/blob/main/internships/LGInnotek/REAME.md)
 **Latent Space Modeling and Synthetic Data Generation in Manufacturing**
 
 <table style="width: 100%; table-layout: fixed;">
