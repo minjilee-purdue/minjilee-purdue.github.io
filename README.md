@@ -6,7 +6,7 @@
         <a href="#Contact" style="text-decoration: none;">Contact</a>
     </nav>
     <div>
-        <a href="MinjiLee_Resume_PurdueUniversity.pdf" target="_blank">
+        <a href="MinjiLee_Resume_PurdueUniversity_2026_PhD.pdf" target="_blank">
             <img src="pdf-icon.png" alt="Download CV" title="Download CV" width="30" height="30"/>
         </a>
     </div>
